@@ -4167,11 +4167,11 @@ form.example::after {
   background-color: rgba(196, 196, 196, 0.15) !important;
 } */
 .btn-primary{
-  background: #00618A !important;
+  background: #0a5973 !important;
   border-radius: 5px !important;
 }
 .btn-primary:hover{
-  background: #00618A !important;
+  background: #0a5973 !important;
   border-radius: 5px !important;
 }
 .padding_card{
