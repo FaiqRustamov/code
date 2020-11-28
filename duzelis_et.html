@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <title>Code yourself - change yourself</title>
+  <!-- Bootstrap CSS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<style>
+   /* duzelis et start */
+.correct span{
+
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #0A5973;
+}
+.correct span , .correct ul{
+  /* margin-left: 25px; */
+}
+ .correct ul {
+  width:100%;
+  height:100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 30px 30px;
+
+ }
+ .correct ul li{
+  
+  /* font-family: Mulish; */
+  padding-top: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+    color: rgba(10, 89, 115, 0.7);
+ }
+
+ .correct ul li:hover, .active {
+  
+   color: #E48E00 !important;
+  
+ }
+
+
+ .profileInfo,.correctPassword{
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* text-align: center; */
+ }
+ .correctPassword{
+   height: 401px !important;
+ }
+ .profileInfo img{
+   /* margin-left: 39%;
+  width: 107px;
+  height: 107px; */
+  border-radius: 50%;
+ }
+
+ .profileInfo p, .correctPassword p{
+   margin-bottom: 0;
+   padding-top: 15px;
+   color: rgba(10, 89, 115, 0.7);
+ }
+ .profileInfo input,.correctPassword input{
+  /* width: 536px;
+  height: 40px; */
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  box-sizing: border-box;
+  border-radius: 4px;
+ 
+ }
+ .profileInfo  input ,p , button{
+   /* margin-left: 60px; */
+ }
+
+ .profileInfo .infoAbout{
+  /* width: 516px;
+  height: 20px; */
+ }
+ .profileInfo button,.correctPassword button{
+  /* width: 188px;
+  height: 44px; */
+  margin-top: 35px;
+  color:white;
+  background: #25677D;
+  border-radius: 5px;
+ }
+
+
+ 
+ .correctPassword p,input,button{
+  /* margin-left: 60px; */
+
+ }
+ .exitProfile ul{
+  margin-top: -50px;
+  /* width: 149px;
+  height: 99px; */
+ 
+  background: #FFFFFF;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 0px 0px 10px 10px;
+  list-style-type: none;
+  margin-left: 35px;
+ }
+
+ .exitProfile ul li{
+  margin-top: 7px;
+  margin-left: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  
+  color: rgba(10, 89, 115, 0.7);
+}
+.exitProfile ul li:hover{
+  background: rgba(10, 89, 115, 0.15);
+}
+ /* duzelis et end */
+
+
+
+
+
+.col-edit-1{
+width: 36%;
+padding: 0 80px 0  220px;
+}
+
+.col-edit-2{
+  width: 64%;
+  padding: 0 400px 0  20px;
+}
+.pdding_1{
+
+}
+.pdding_2{
+  
+}
+@media only screen and (max-width: 1191px){
+  .col-edit-1{
+width: 100%;
+padding: 0 60px 0  60px;
+}
+
+.col-edit-2{
+  width: 100%;
+  padding: 0 0px;
+}
+}
+
+
+
+</style>
+<body>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
+        <div class="container-fluid navbar_padding">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html"><img src="./img/logo.png" alt="" /></a>          
+          <div class="btn-group">
+            <img src="./img/sexsi_kabinet.png" class="media-object" style="width:57px;border-radius: 1.5rem;" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">           
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+              <button class="dropdown-item" type="button">Profil</button>
+              <button class="dropdown-item" type="button">Tənzimləmələr</button>
+              <button class="dropdown-item" type="button">Çıxış</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+  <!--================ Start Home Banner Area =================-->
+  <section style="height: 80px;">
+    <div class="banner_inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner_content flout-left">
+
+            </div>
+          </div>
+        </div> 
+      </div>      
+    </div>
+  </section>
+
+  <!--================ End Home Banner Area =================-->
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-edit-1">
+      <div class="correct">
+        <span>Düzəliş et</span>
+        <ul id="correctUl">
+          <li class="correctLi active pm">Profil Məlumatları </li>
+          <li class="correctLi sy">Şifrəni yenilə</li>
+          <li  class="correctLi">Deaktivasiya</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-edit-2" >
+      <div class="" style="width: 100%;" >
+        <div class="card-body">
+          <div class="profileInfo" >
+              <div class="container" style="padding: 40px 80px;">
+                <div class="d-flex justify-content-center"><img src="./img/Mask Group.png" class="media-object "></div>
+                
+                <p>Ad Soyad</p>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                <p>Email</p>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                <p>Mobil Nomre</p>
+                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                <p >Haqqimda</p>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button>Yadda Saxla</button>
+              </div>
+             
+           </div>
+      
+           <div class="correctPassword" style="display: none;padding: 40px 80px;">
+            <div class="container">
+              <p>Köhnə şifrə</p>
+              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              <p>Yeni Şifrə</p>
+              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              <p>Yeni Şifrə təkrar</p>
+              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              <button>Yadda Saxla</button>
+            </div>
+      
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background: rgba(56, 90, 100, 0.92);margin-top: 80px;">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left navbar_padding"  style="padding-top: 60px;;padding-bottom: 60px;">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÜMUMİ</h5>
+  
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="./about-us.html">Haqqımızda</a>
+          </li>
+          <li class="footer_li">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="footer_li">
+            <a href="useful.html">Faydalı</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÖZÜNÜ YOXLA</h5>
+  
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="general-tasks.html">Çalışmalar</a>
+          </li>
+          <li class="footer_li">
+            <a href="general-quizzes.html">Testlər</a>
+          </li>
+          <li class="footer_li">
+            <a href="general-interviews.html">Müsahibə Sualları</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ƏLAQƏ</h5>
+  
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="#!">Email: info@codeyourself.com</a>
+          </li>
+               <li class="footer_ul_li_a_paddding footer_li" >
+                <a target="_blank" href="https://www.facebook.com/codeyourself1/"><i class="ti-facebook font_size_footer_icon"></i></a>
+    
+                <a target="_blank" href="https://www.instagram.com/code_yourself/"><i class="ti-instagram font_size_footer_icon"></i></a>
+    
+                <a target="_blank" href="https://www.linkedin.com/company/code-yourself/"><i class="ti-linkedin font_size_footer_icon"></i></a> 
+    
+                <a target="_blank" href="https://t.me/codeyourself"><i class="fa fa-telegram font_size_footer_icon"></i></a> 
+    
+                <a target="_blank" href="https://twitter.com/code_yourself"><i class="ti-twitter font_size_footer_icon"></i></a> 
+              </li>
+          <hr class="clearfix w-100 d-md-none pb-3">
+        </ul> 
+      </div>
+      <!-- Grid column -->
+      
+          <!-- Grid column -->
+          
+    
+
+
+    
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+ 
+
+</footer>
+<!-- Footer -->
+
+<footer>
+   <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background: #385A64; color: white;">  <i class="fa fa-heart" style="color:red;font-size: 18px;"></i> ilə Azərbaycanda hazırlanıb ©2021
+  </div>
+  <!-- Copyright -->
+  </footer>
+
+
+
+  
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./vendors/main/allcourse.js"></script>
+  <script src="./vendors/main/index.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/owl-carousel-thumb.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./vendors/main/main_page_corse.js"></script>
+
+  <script>
+var header = document.getElementById("correctUl");
+var btns = header.getElementsByClassName("correctLi");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+  </script>
+              <script>
+                // change main content
+                $(document).ready(function(){
+                    $(".pm").click(function(){
+                        $(".profileInfo").css("display", "block");
+                        $(".correctPassword").css("display", "none");
+                    });
+                    
+                    $(".sy").click(function(){
+                      $(".profileInfo").css("display", "none");
+                        $(".correctPassword").css("display", "block");
+                    });
+                });
+                </script>
+
+<script>
+  //  profil exit toggle
+  $(document).ready(function(){
+    $(".media-object").click(function(){
+      $(".exitProfile").toggle();
+    });
+  });
+  </script>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./js/search.js"></script>
+  <script src="./vendors/main/corse_main_api.js"></script>
+
+</body>
+
+</html>
