@@ -25,10 +25,10 @@ theme.
 
 body {
   line-height: 25px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Fira Sans', sans-serif;;
-  font-weight: 400;
-  color: #7b838a; 
+  font-weight: 600;
+  color: #0a5973; 
   background: rgba(248, 248, 248, 1);
 }
 
