@@ -28,80 +28,89 @@
 </head>
 <body>
 
+  <style>
+    .mobil-tab {
+      display: none !important;
+    }
 
+    @media (max-width: 627px) {
+      .repo-desktop {
+        display: none;
+      }
+
+      .mobil-tab {
+        display: block !important;
+      }
+    }
+  </style>
   
- <!--================ Start Header Menu Area =================-->
- <header class="header_area">
-  <div class="main_menu">
-    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
-      <div class="container-fluid navbar_padding">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <a class="navbar-brand logo_h" href="index.html"><img src="./img/logo.png" alt="" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span> <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-          <ul class="nav navbar-nav menu_nav ml-auto">
-            <li class="nav-item matgin_style">
-              <div class="searchbar">
 
-                <input type="text" placeholder="Axtar...">
 
-                <div class="icon">
-                  <i class="fas fa-search"></i>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
+        <div class="container-fluid navbar_padding">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html"><img src="./img/logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item matgin_style">
+                <div class="searchbar">
+  
+                  <input type="text" placeholder="Axtar...">
+  
+                  <div class="icon">
+                    <i class="fas fa-search"></i>
+                  </div>
                 </div>
-              </div>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link"  href="./blog.html">Bloq</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">Giriş</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./register.html">Qeydiyyat</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-</header>
-<!--================ End Header Menu Area =================-->
-
-<!--================ Start Home Banner Area =================-->
-<section class="home_banner_area">
-  <div class="banner_inner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="banner_content flout-left">
-            <!-- <p class="text">
-              İnsan sanki kodlaşdırılmış texniki bir məhsuldur. Bu məhsulun inkişaf etməsi və dəyişməsi
-              üçün o, yalnız öyrənməlidir. Təklif edirik ki, özünüzü dəyişmək üçün elə məhz kodlaşdırmadan
-              başlayasınız.
-            </p> -->
-            <h1 class="text-uppercase mt-4 mb-5" >
-              <br> ÖZÜN KODLA, <br><br> ÖZÜNÜ KODLA, <br><br> ÖZÜNÜ DƏYİŞ!
-            </h1>
-            
-            <!-- 
-            <div>
-              <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a>
-            </div>
-            -->
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link"  href="./blog.html">Bloq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Giriş</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./register.html">Qeydiyyat</a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+  <!--================ Start Home Banner Area =================-->
+  <br><br><br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <h1 class="text-uppercase mt-4 mb-5 py-5 repo-desktop" style="float: right;">
+          <br> ÖZÜN KODLA, <br><br> ÖZÜNÜ KODLA, <br><br> ÖZÜNÜ DƏYİŞ!
+        </h1>
+      </div>
+      <div class="col-sm-9">
+        <img src="./img/main-page.svg" alt="">
+      </div>
+      <div class="col-12 mobil-tab">
+        <h1 class="text-uppercase " style="text-align: center;">
+          <br> ÖZÜN KODLA,ÖZÜNÜ KODLA,ÖZÜNÜ DƏYİŞ!
+        </h1>
       </div>
     </div>
   </div>
-</section>
-<!--================ End Home Banner Area =================-->
 
+  <!--================ End Home Banner Area =================-->
 
   <!--================ Start Feature Area =================-->
   <section class=" section_gap_top">
