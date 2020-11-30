@@ -1,364 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Quiz Project</title>
+  <link type='text/css' rel='stylesheet' href='stylesheet.css' />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <title>CodeYourSelf</title>
 </head>
+<style>
+  body {
+    font-family: Open Sans;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+
+  #quiz {
+    text-indent: 10px;
+    display: none;
+  }
+
+  .button {
+    border: 4px solid;
+    border-radius: 5px;
+    width: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    float: right;
+    background-color: #DCDCDC;
+    color: black;
+    margin: 0 2px 0 2px;
+  }
+
+  .button.active {
+    background-color: #F8F8FF;
+    color: #525252;
+  }
+
+  button {
+    position: relative;
+    float: right;
+  }
+
+  .button a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #container {
+    width: 50%;
+    margin: auto;
+    padding: 0 25px 40px 10px;
+    background-color: #1E90FF;
+    border: 4px solid #B0E0E6;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #888;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #prev {
+    display: none;
+  }
+
+  #start {
+    display: none;
+    width: 90px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background: #fff;
+    color: #117eeb;
+  }
+
+  body {
+    background: #0a5973;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+  }
+</style>
 
 <body>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    ::selection {
-      background: #fff;
-      color: #117eeb;
-    }
-
-    body {
-      background: #0a5973;
-      font-family: 'Fira Sans', sans-serif;
-      font-weight: 300;
-      color: #fff;
-    }
-  </style>
-
   <div class="container">
     <div class="row">
-      <h1>JS Quiz</h1>
-      <div class="container">
-        <div class="row">
-          <div class="quiz-wrapper">
-            <form id="quiz">
-              <div class="quiz-navigation">
-                <input type="submit" id="prev" value="prev">
-                <input type="submit" id="next" value="next">
-              </div>
-              
-            </form>
-          </div>
+      <div style="margin: 0 auto; width: 100%;">
+        <div id='title'>
+          <h1 style="text-align: center;">Quiz</h1>
         </div>
+        <br />
+        <div id='quiz'></div>
+        <div class='button' id='next'><a href='#'>Next</a></div>
+        <div class='button' id='prev'><a href='#'>Prev</a></div>
+        <div class='button' id='start'> <a href='#'>Start Over</a></div>
+        <!-- <button class='' id='next'>Next</a></button>
+        <button class='' id='prev'>Prev</a></button>
+        <button class='' id='start'> Start Over</a></button> -->
       </div>
     </div>
   </div>
 
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  <script type="text/javascript" src='questions.json'></script>
+  <script type='text/javascript' src='jsquiz.js'></script>
+
   <script>
-    var QuestionsArray = [
-      {
-        question: 'Entomology is the science that studies:',
-        answers: [
-          'Behavior of human beings',
-          'Insects',
-          'The origin and history of technical and scientific terms',
-          'The formation of rocks'
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: 'Galileo was an Italian astronomer who:',
-        answers: [
-          'developed the telescope',
-          'discovered four satellites of Jupiter',
-          'discovered that the movement of pendulum produces a regular time measurement',
-          'All of the above'
-        ],
-        correctAnswer: 3,
-      },
-      {
-        question: 'Exposure to sunlight helps a person improve his health because:',
-        answers: [
-          'the infrared light kills bacteria in the body',
-          'resistance power increases',
-          'the pigment cells in the skin get stimulated and produce a healthy tan',
-          'the ultraviolet rays convert skin oil into Vitamin D'
-        ],
-        correctAnswer: 3,
-      },
-      {
-        question: '\'OS\' computer abbreviation usually means:',
-        answers: [
-          'Order of Significance',
-          'Open Software',
-          'Operating System',
-          'Optical Sensor'
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: 'Which scientist discovered the radioactive element radium?',
-        answers: [
-          'Isaac Newton',
-          'Albert Einstein',
-          'Benjamin Franklin',
-          'Marie Curie'
-        ],
-        correctAnswer: 3,
-      },
-      {
-        question: 'The great Victoria Desert is located in:',
-        answers: [
-          'Canada',
-          'West Africa',
-          'Australia',
-          'North America'
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: 'Euclid was',
-        answers: [
-          'Greek mathematician',
-          'Contributor to the use of deductive principles of logic as the basis of geometry',
-          'Propounded the geometrical theorems',
-          'All of the above'
-        ],
-        correctAnswer: 3,
-      },
-      {
-        question: 'Who invented Dynamite?',
-        answers: [
-          'Alfred B. Nobel',
-          'Sir Alexander Graham Bell',
-          'Benjamin Franklin',
-          'Thomas Alva Edison'
+    (function () {
+      var questions = [{
+        question: "What happens to plastic waste?",
+        choices: ["It is a biodegradable material so it eventually disintegrates",
+          "It never fully goes away, it just breaks into little pieces",
+          "There is no such thing as plastic waste, all plastic is recycled",
+          "It is dumped in the ocean for fish to eat"],
+        correctAnswer: 2
+      }, {
+        question: "What happens to plastic waste?",
+        choices: ["It is a biodegradable material so it eventually disintegrates",
+          "It never fully goes away, it just breaks into little pieces",
+          "There is no such thing as plastic waste, all plastic is recycled",
+          "It is dumped in the ocean for fish to eat"],
+        correctAnswer: 4
+      }, {
+        question: "What happens to plastic waste?",
+        choices: ["It is a biodegradable material so it eventually disintegrates",
+          "It never fully goes away, it just breaks into little pieces",
+          "There is no such thing as plastic waste, all plastic is recycled",
+          "It is dumped in the ocean for fish to eat"],
+        correctAnswer: 0
+      }, {
+        question: "What happens to plastic waste?",
+        choices: ["It is a biodegradable material so it eventually disintegrates",
+          "It never fully goes away, it just breaks into little pieces",
+          "There is no such thing as plastic waste, all plastic is recycled",
+          "It is dumped in the ocean for fish to eat"],
+        correctAnswer: 3
+      }, {
+        question: "What happens to plastic waste?",
+        choices: ["It is a biodegradable material so it eventually disintegrates",
+          "It never fully goes away, it just breaks into little pieces",
+          "There is no such thing as plastic waste, all plastic is recycled",
+          "It is dumped in the ocean for fish to eat"],
+        correctAnswer: 4
+      }];
 
-        ],
-        correctAnswer: 0,
-      }
-    ];
-    var quiz = document.getElementById('quiz'),
-      quizNav = document.getElementsByClassName('quiz-navigation')[0];
-    quiz.addEventListener('submit', function (e) {
-      e.preventDefault();
-    });
+      var questionCounter = 0; //Tracks question number
+      var selections = []; //Array containing user choices
+      var quiz = $('#quiz'); //Quiz div object
 
+      // Display initial question
+      displayNext();
 
-    var QuestionElement = function (QuestionObject, parentElement, questionPosition) {
-      this.question = QuestionObject;
-      this.position = questionPosition;
-      this.element = document.createElement('div');
-      this.element.className = 'question-wrapper';
-      this.inputs = [];
-      this.labels = [];
-      this.create = function () {
-        var self = this;
-        //var content = '<h2>' + (this.position + 1) + '. ' + QuestionObject.question +'</h2>';
-        this.element.innerHTML = '<h2>' + (this.position + 1) + '. ' + QuestionObject.question + '</h2>';
-        QuestionObject.answers.forEach(function (answer, index) {
-          //content += '<div class="answer">';
-          //-----------
-          var answerWrapper = document.createElement('div');
-          answerWrapper.className = 'answer';
-          var input = document.createElement('input');
-          input.type = 'radio';
-          input.id = questionPosition + '-' + index + '-num';
-          input.name = 'question-' + questionPosition;
-          input.value = index;
-          var label = document.createElement('label');
-          label.htmlFor = questionPosition + '-' + index + '-num';
-          label.textContent = answer;
-          answerWrapper.appendChild(input);
-          answerWrapper.appendChild(label);
-          //console.log(answerWrapper.innerHTML);
-          self.inputs.push(input);
-          self.labels.push(label);
-          self.element.appendChild(answerWrapper);
-          input.addEventListener('change', function () {
-            self.updateAnswer();
-            //alert(self.isAnswerCorrect());
-          });
-          //-----------
-          //content += '<input type="radio" id="' + questionPosition + '-' + index + '-num" name="question-' + questionPosition + '" value="' + index + '">';
-          //content += '<label for="' + questionPosition + '-' + index + '-num">' + answer + '</label>';
-          //content += '</div>';
-        });
-        //console.log(self.inputs);
-        //this.element.innerHTML = content;
-      };
-      this.answer = null;
-      this.updateAnswer = function () {
-        //lecę przez wszystkie elementy z tym samym atrybutem name i sprawdzam który zaznaczony
-        var self = this;
-        this.inputs.forEach(function (input) {
-          if (input.checked) {
-            self.answer = input.value;
-          }
-        });
-      }
-      this.isAnswerCorrect = function () {
-        if (this.answer === null) {
+      // Click handler for the 'next' button
+      $('#next').on('click', function (e) {
+        e.preventDefault();
+
+        // Suspend click listener during fade animation
+        if (quiz.is(':animated')) {
           return false;
         }
-        return this.question.correctAnswer === Number(this.answer);
-      };
-      this.showCorrect = function () {
-        this.labels[this.question.correctAnswer].style.color = '#090';
-      };
-      this.showUserAnswers = function () {
-        if (this.answer) {
-          this.labels[this.answer].style.color = '#900';
-        }
-      };
-      this.append = function () {
-        this.create();
-        //parentElement.appendChild(this.element);//może być problem z this
-        parentElement.insertBefore(this.element, quizNav);
-      };
-      this.show = function () {
-        this.element.style.display = 'block';
-      };
-      this.hide = function () {
-        this.element.style.display = 'none';
-      }
-    }
+        choose();
 
-
-
-    var questions = [];
-    QuestionsArray.forEach(function (q, index) {
-      questions.push(new QuestionElement(q, quiz, index));
-      questions[index].append();
-    });
-    //quiz.innerHTML += '<input type="submit" value="next">';
-
-
-    var Quiz = {
-      showAnswers: function () {
-        //var content = '<h2>Answers</h2>';
-        questions.forEach(function (q) {
-          /* content += '<div>';
-          content += '</div>'; */
-          q.show();
-          q.showUserAnswers();
-          q.showCorrect();
-          q.inputs.forEach(function (inp) {
-            inp.disabled = true;
-            inp.style.display = 'none';
-          });
-        });
-      }
-    }
-
-
-
-    var QuizNavigation = {
-      currentQuestion: 0,
-      nextBtn: document.getElementById('next'),
-      prevBtn: document.getElementById('prev'),
-      numberBtns: [],
-      showQuestion: function (index) {
-        questions.forEach(function (q) {
-          if (q.position !== index) {
-            q.hide();
-            //console.log(q.position);
-          }
-        });
-        questions[index].show();
-        this.currentQuestion = index;
-      },
-      next: function () {
-        var self = this;
-        self.showQuestion(++self.currentQuestion);
-      },
-      prev: function () {
-        this.showQuestion(--this.currentQuestion);
-      },
-      makeNumbers: function () {
-        var self = this;
-        questions.forEach(function (q) {
-          var numberBtn = document.createElement('button');
-          numberBtn.textContent = q.position + 1;
-          numberBtn.addEventListener('click', function () {
-            self.showQuestion(q.position);
-            self.checkPos();
-          });
-          //quizNav.appendChild(numberBtn);
-          self.numberBtns.push(numberBtn);
-          quizNav.insertBefore(numberBtn, self.nextBtn);
-
-        });
-      },
-      checkPos: function () {
-        this.numberBtns.forEach(function (btn) {
-          btn.disabled = '';
-        });
-        this.numberBtns[this.currentQuestion].disabled = true;
-        if (this.currentQuestion === 0) {
-          this.prevBtn.disabled = true;
+        // If no user selection, progress is stopped
+        if (isNaN(selections[questionCounter])) {
+          alert('Please make a selection!');
         } else {
-          this.prevBtn.disabled = '';
+          questionCounter++;
+          displayNext();
         }
-        if (this.currentQuestion === (questions.length - 1)) {
-          this.nextBtn.disabled = true;
-          this.endQuizBtn.add();
-        } else {
-          this.nextBtn.disabled = '';
-          this.endQuizBtn.remove();
+      });
+
+      // Click handler for the 'prev' button
+      $('#prev').on('click', function (e) {
+        e.preventDefault();
+
+        if (quiz.is(':animated')) {
+          return false;
         }
-      },
-      endQuizBtn: {
-        element: document.createElement('button'),
-        add: function () {
-          var self = this;
-          self.element.textContent = 'End quiz';
-          quizNav.appendChild(self.element);
-        },
-        remove: function () {
-          var self = this;
-          if (quizNav.lastChild === self.element) {//tutaj pewnie można zrobić lepsze sprawdzenie
-            quizNav.removeChild(self.element);
-          }
-        },
-        clicked: function () {
-          var score = 0;
-          questions.forEach(function (q) {
-            if (q.isAnswerCorrect()) {
-              ++score;
+        choose();
+        questionCounter--;
+        displayNext();
+      });
+
+      // Click handler for the 'Start Over' button
+      $('#start').on('click', function (e) {
+        e.preventDefault();
+
+        if (quiz.is(':animated')) {
+          return false;
+        }
+        questionCounter = 0;
+        selections = [];
+        displayNext();
+        $('#start').hide();
+      });
+
+      // Animates buttons on hover
+      $('.button').on('mouseenter', function () {
+        $(this).addClass('active');
+      });
+      $('.button').on('mouseleave', function () {
+        $(this).removeClass('active');
+      });
+
+      // Creates and returns the div that contains the questions and 
+      // the answer selections
+      function createQuestionElement(index) {
+        var qElement = $('<div>', {
+          id: 'question'
+        });
+
+        var header = $('<h2>Question ' + (index + 1) + ':</h2>');
+        qElement.append(header);
+
+        var question = $('<p>').append(questions[index].question);
+        qElement.append(question);
+
+        var radioButtons = createRadios(index);
+        qElement.append(radioButtons);
+
+        return qElement;
+      }
+
+      // Creates a list of the answer choices as radio inputs
+      function createRadios(index) {
+        var radioList = $('<ul>');
+        var item;
+        var input = '';
+        for (var i = 0; i < questions[index].choices.length; i++) {
+          item = $('<li>');
+          input = '<input type="radio" name="answer" value=' + i + ' />';
+          input += questions[index].choices[i];
+          item.append(input);
+          radioList.append(item);
+        }
+        return radioList;
+      }
+
+      // Reads the user selection and pushes the value to an array
+      function choose() {
+        selections[questionCounter] = +$('input[name="answer"]:checked').val();
+      }
+
+      // Displays next requested element
+      function displayNext() {
+        quiz.fadeOut(function () {
+          $('#question').remove();
+
+          if (questionCounter < questions.length) {
+            var nextQuestion = createQuestionElement(questionCounter);
+            quiz.append(nextQuestion).fadeIn();
+            if (!(isNaN(selections[questionCounter]))) {
+              $('input[value=' + selections[questionCounter] + ']').prop('checked', true);
             }
-          });
-          //var content = '<h2>Your score: ' + score + '</h2>';
-          var showScore = document.createElement('h2');
-          showScore.textContent = 'Your score: ' + score;
-          //alert(score);
-          quiz.appendChild(showScore);
-          Quiz.showAnswers();
-          quizNav.style.display = 'none';
-        },
-        addEvent: function () {
-          var self = this;
-          this.element.addEventListener('click', function () {
-            self.clicked();
-            //alert('fddsf');
-          });
-        }
-      },
-      handleEvents: function () {
-        var self = this;
-        this.nextBtn.addEventListener('click', function () {
-          self.next();
-          self.checkPos();
+
+            // Controls display of 'prev' button
+            if (questionCounter === 1) {
+              $('#prev').show();
+            } else if (questionCounter === 0) {
+
+              $('#prev').hide();
+              $('#next').show();
+            }
+          } else {
+            var scoreElem = displayScore();
+            quiz.append(scoreElem).fadeIn();
+            $('#next').hide();
+            $('#prev').hide();
+            $('#start').show();
+          }
         });
-        this.prevBtn.addEventListener('click', function () {
-          self.prev();
-          self.checkPos();
-        });
-        this.endQuizBtn.addEvent();
       }
-    };
 
+      // Computes score and returns a paragraph element to be displayed
+      function displayScore() {
+        var score = $('<p>', { id: 'question' });
 
+        var numCorrect = 0;
+        for (var i = 0; i < selections.length; i++) {
+          if (selections[i] === questions[i].correctAnswer) {
+            numCorrect++;
+          }
+        }
 
-    QuizNavigation.showQuestion(0);
-    QuizNavigation.makeNumbers();
-    QuizNavigation.checkPos(questions[0]);
-    QuizNavigation.handleEvents();
+        score.append('You got ' + numCorrect + ' questions out of ' +
+          questions.length + ' right!!!');
+        return score;
+      }
+    })();
   </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
