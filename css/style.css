@@ -306,7 +306,7 @@ color:rgba(255, 255, 255, 0.76);
   }}
 
 .section_gap_top {
-  padding-top: 130px; }
+  padding-top: 60px; }
   @media (max-width: 991px) {
     .section_gap_top {
       padding-top: 70px; } }
