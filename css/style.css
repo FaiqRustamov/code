@@ -4288,7 +4288,8 @@ padding: 0 30px;
   }
 .footer_ul_li_a_paddding a{
   color:rgba(255, 255, 255, 0.76);
-    padding-left: 10px;
+    padding-left: 0px;
+    padding-right: 8px;
 }
   .searchbar{
   position: relative;
