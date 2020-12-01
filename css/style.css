@@ -4137,13 +4137,13 @@ form.example::after {
   margin-top: 190px;
 }
 .paner_into_button{
-  background-color: rgba(0, 97, 138, 1);
+  background-color: #0a5973;
   color: white;
   padding: 2px 8px;
   border-radius: 5px;
 }
 .paner_into_button:hover{
-  background-color: rgba(0, 97, 138, 1);
+  background-color: #0a5973;
   color: white;
   padding: 2px 8px;
   border-radius: 5px;
