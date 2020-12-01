@@ -25,7 +25,11 @@
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
+<style>
+  .cheachboxclass{
+    margin-top: 5px;
+  }
+</style>
 <body>
   
  <!--================ Start Header Menu Area =================-->
@@ -100,8 +104,10 @@
        <br><br>
       Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
      </p>
-     <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Əvvəlki</button>
-     <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Növbəti</button>
+     <div class="d-flex justify-content-center">
+      <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Əvvəlki</button>
+      <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Növbəti</button>
+     </div>
      <br><br><br>
      <!-- <div>
        <h2 class="input_corse_h2">Bu kurs haqqında nə düşünürsən?</h2>
@@ -120,7 +126,7 @@
      <div class="panel_2">
        <div class="container-fluid" style="padding-top:15px">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 cheachboxclass">
             <a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>
             <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
           <div class="col-6">Ümumi məlumat <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button></div>
