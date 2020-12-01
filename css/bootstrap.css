@@ -745,8 +745,8 @@ pre code {
 
 .col-3 {
     -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%
+    flex: 0 0 1%;
+    max-width: 1%
 }
 
 .col-4 {
