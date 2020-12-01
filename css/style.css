@@ -4179,9 +4179,9 @@ form.example::after {
   padding:0 70px;
 }
 .input_corse_h3{
-  color: rgba(0, 0, 0, 0.83);
-  font-size: 20px;
-  padding: 50px 30px;
+  color: #495057;
+  font-size: 25px;
+  padding: 50px 50px;
 }
 .box_right{
   border-left:  1px solid rgba(0, 0, 0, 0.25) !important;
