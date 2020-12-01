@@ -4157,6 +4157,7 @@ form.example::after {
   font-size: 16px;
   margin-bottom: 40px;
   margin-top: 40px;
+  text-align: justify;
 }
 .input_corse_h2{
   color: rgba(1, 30, 41, 0.85);
@@ -4235,7 +4236,7 @@ transition: 0.9s;
 transition: max-height 0.9s ease-out;
 }
 .navbar_padding{
-padding: 0 160px;
+padding: 0 70px;
 }
 @media (max-width: 991.98px){
 .navbar_padding{
