@@ -37,8 +37,11 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
+<!-- trinket link -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=6ddbf6f8bec4">
 
 </head>
+
 <style>
   .module-main {
     position: relative;
@@ -46,8 +49,13 @@
     /* padding: 10px; */
     margin-bottom: 30px;
     transition: all 0.3s ease 0s;
-    
+
   }
+  @media (min-width: 576px){
+.modal-dialog {
+    max-width: 900px !important;
+    margin: 1.75rem auto;
+}}
 </style>
 
 <body>
@@ -107,19 +115,23 @@
     </div>
   </section>
   <br><br><br>
-  
-  <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="main_title">
-              <br><br><br>
-              <h1 class="mb-3">Sətir metodarı</h1>
-              <h4 class="mb-3">“Pythonun əsasları” kursunda sətirlərdən danışarkən bəzi sətir metodlarının da adlarını vurğulamışıq. 
-                Hər bir metod sintaktik olaraq bu cür quruluşa malikdir: sətir.metod (parametr) - burada, parametr - funksiyanı 
-                təyin edərkən "gələcəkdə" qəbul edəcəyimiz qiymətlər (arqumentlər) üçün şərti addır. 
-                Məcburi və ya istəyə bağlı olaraq istifadə edilə bilər. </h4>
-            </div>
-          </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="main_title">
+          <br><br><br>
+          <h1 class="mb-3">Sətir metodarı</h1>
+          <h4 class="mb-3">“Pythonun əsasları” kursunda sətirlərdən danışarkən bəzi sətir metodlarının da adlarını
+            vurğulamışıq.
+            Hər bir metod sintaktik olaraq bu cür quruluşa malikdir: sətir.metod (parametr) - burada, parametr -
+            funksiyanı
+            təyin edərkən "gələcəkdə" qəbul edəcəyimiz qiymətlər (arqumentlər) üçün şərti addır.
+            Məcburi və ya istəyə bağlı olaraq istifadə edilə bilər. </h4>
         </div>
+      </div>
+    </div>
+  </div>
 
   <div class="container-fluid py-3" style="padding: 120px;">
     <div class="row">
@@ -129,8 +141,8 @@
             <img src="./img/modul/copy (set).png" alt="" width="150" height="150">
           </center>
           <p style="text-align: center;">
-                title() 
-              </p>
+            title()
+          </p>
 
           <div class="desc">
 
@@ -139,15 +151,77 @@
             aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
-                <div class="modal-body">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                  has been the industry’s standard dummy text ever since the 1500s, when an unknown printer
-                  took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                  five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                  been the industry’s standard dummy text ever since the 1500s, when an unknown printer took
-                  a
-                </div>
+              
+                  <div id="decs-code-wrapper_0" style="position: relative;"><a id="decs_instance_0"
+                      style="position: absolute; z-index: 100; display: block; padding: 0; cursor: pointer; bottom: 3px; right: 8px;"><svg
+                        width="22px" height="22px" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="47.9379" cy="48.9454" rx="43.807" ry="44.1524" fill="#41B883"></ellipse>
+                        <g filter="url(#filter0_d)">
+                          <path
+                            d="M73.5134 56.2109L48.7693 40.6152C48.492 40.4293 48.2149 40.3672 47.9375 40.3672C47.6602 40.3672 47.3831 40.4293 47.1058 40.6152L22.3617 56.2109C21.9306 56.4895 21.6533 56.9855 21.6533 57.5121C21.6533 58.0388 21.9306 58.5347 22.3617 58.8134L47.1058 74.3058C47.3831 74.4607 47.6602 74.5538 47.9375 74.5538C48.2149 74.5538 48.492 74.4607 48.7693 74.3058L73.5134 58.8134C73.9446 58.5346 74.2218 58.0388 74.2218 57.5121C74.2218 56.9855 73.9445 56.4895 73.5134 56.2109Z"
+                            fill="white"></path>
+                        </g>
+                        <g filter="url(#filter1_d)">
+                          <path
+                            d="M73.5134 47.5077L48.7693 31.912C48.492 31.7261 48.2149 31.6641 47.9375 31.6641C47.6602 31.6641 47.3831 31.7261 47.1058 31.912L22.3617 47.5077C21.9306 47.7864 21.6533 48.2824 21.6533 48.809C21.6533 49.3356 21.9306 49.8316 22.3617 50.1103L47.1058 65.6027C47.3831 65.7576 47.6602 65.8507 47.9375 65.8507C48.2149 65.8507 48.492 65.7576 48.7693 65.6027L73.5134 50.1103C73.9446 49.8315 74.2218 49.3356 74.2218 48.809C74.2218 48.2824 73.9444 47.7864 73.5134 47.5077Z"
+                            fill="white"></path>
+                        </g>
+                        <g filter="url(#filter2_d)">
+                          <path
+                            d="M73.5134 39.0546L48.7693 23.4589C48.492 23.273 48.2149 23.2109 47.9375 23.2109C47.6602 23.2109 47.3831 23.273 47.1058 23.4589L22.3617 39.0546C21.9306 39.3333 21.6533 39.8292 21.6533 40.3559C21.6533 40.8825 21.9306 41.3785 22.3617 41.6571L47.1058 57.1496C47.3831 57.3045 47.6602 57.3975 47.9375 57.3975C48.2149 57.3975 48.492 57.3045 48.7693 57.1496L73.5134 41.6571C73.9446 41.3784 74.2218 40.8825 74.2218 40.3559C74.2218 39.8292 73.9444 39.3333 73.5134 39.0546Z"
+                            fill="white"></path>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d" x="17.6533" y="38.3672" width="60.5684" height="42.1866"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                          </filter>
+                          <filter id="filter1_d" x="17.6533" y="29.6641" width="60.5684" height="42.1866"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                          </filter>
+                          <filter id="filter2_d" x="17.6533" y="21.2109" width="60.5684" height="42.1866"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                          </filter>
+                        </defs>
+                      </svg></a>
+                      <pre class="lang-py s-code-block hljs python"><code><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf
+                        tf.config.threading.set_intra_op_parallelism_threads(<span class="hljs-number">1</span>)
+                        tf.config.threading.set_inter_op_parallelism_threads(<span class="hljs-number">1</span>)
+                        
+                        model = simple_ann()
+                        model.fit(loader_tr.load(),
+                                  verbose=<span class="hljs-number">0</span>,
+                                  epochs=epochs,
+                                  ...)
+                        </code></pre>
+                  </div>
+               
               </div>
             </div>
           </div>
@@ -159,8 +233,8 @@
             <img src="./img/modul/copy (set).png" alt="" width="150" height="150">
           </center>
           <p style="text-align: center;">
-                capitalize() 
-              </p>
+            capitalize()
+          </p>
           <div class="desc">
 
           </div>
@@ -192,8 +266,8 @@
             <img src="./img/modul/copy (set).png" alt="" width="150" height="150">
           </center>
           <p style="text-align: center;">
-                upper() 
-              </p>
+            upper()
+          </p>
           <div class="desc">
 
           </div>
@@ -223,8 +297,8 @@
             <img src="./img/modul/copy (set).png" alt="" width="150" height="150">
           </center>
           <p style="text-align: center;">
-                casefold() 
-              </p>
+            casefold()
+          </p>
           <div class="desc">
 
           </div>
@@ -307,35 +381,6 @@
           </div>
         </div>
       </div>
-      
-      <div class="col-lg-2 col-md-6">
-        <div class="module-main" data-toggle="modal" data-target="#exampleModal5">
-          <center>
-            <img src="./img/modul/copy (set).png" alt="" width="150" height="150">
-          </center>
-          <div class="desc">
-
-          </div>
-          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog ">
-              <div class="modal-content">
-
-                <div class="modal-body">
-                  <img src="./img/ozunu-yoxla-img/built-in.png" alt="">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                  has been the industry’s standard dummy text ever since the 1500s, when an unknown printer
-                  took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                  five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                  been the industry’s standard dummy text ever since the 1500s, when an unknown printer took
-                  a
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div class="col-lg-2 col-md-6">
         <div class="module-main" data-toggle="modal" data-target="#exampleModal5">
@@ -366,7 +411,36 @@
         </div>
       </div>
 
-      
+      <div class="col-lg-2 col-md-6">
+        <div class="module-main" data-toggle="modal" data-target="#exampleModal5">
+          <center>
+            <img src="./img/modul/copy (set).png" alt="" width="150" height="150">
+          </center>
+          <div class="desc">
+
+          </div>
+          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <img src="./img/ozunu-yoxla-img/built-in.png" alt="">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                  has been the industry’s standard dummy text ever since the 1500s, when an unknown printer
+                  took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                  five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                  been the industry’s standard dummy text ever since the 1500s, when an unknown printer took
+                  a
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <div class="col-lg-2 col-md-6">
         <div class="module-main" data-toggle="modal" data-target="#exampleModal7">
