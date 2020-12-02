@@ -387,7 +387,7 @@ color:rgba(255, 255, 255, 0.76);
     .header_area .navbar .nav .nav-item {
       margin-right: 20px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 600 18px/80px "Fira Sans", sans-serif;
+        font: 600 18px/40px "Fira Sans", sans-serif;
         text-transform: capitalize;
         color: #ffffff;
         padding: 0px;
@@ -4415,7 +4415,7 @@ padding: 0 30px;
 }
 .searchbar .icon i{
   position: absolute;
-  top: 50%;
+  top: -16%;
   left: 50%;
   transform: translate(-50%,-50%);
   cursor: pointer;
