@@ -29,6 +29,57 @@
   .cheachboxclass{
     margin-top: 5px;
   }
+  .sidenav {
+  height: 70%;
+  width: 500px;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  background-color: #0a5973;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 500px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ #nonespam{
+   display: none;
+ }
+ .mainnavbar{
+   color: white;
+ }
 </style>
 <body>
   
@@ -90,100 +141,107 @@
 
   <!--================ End Home Banner Area =================-->
 
-<div class="container-fluid">
-  <div class="row">
-   <div class="col-lg-9 col-md-6 padding_card navbar_padding" style="padding-top: 70px;">
-     <div><h1 class="input_corse_h1">Pythona giriş</h1></div>
-     <hr>
-     <p class="input_corse_p">
-       Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
-       <br><br>
-       Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
-       <br><br>
-       Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
-       <br><br>
-      Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
-     </p>
-     <div class="d-flex justify-content-center">
-      <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Əvvəlki</button>
-      <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Növbəti</button>
-     </div>
-     <br><br><br>
-     <!-- <div>
-       <h2 class="input_corse_h2">Bu kurs haqqında nə düşünürsən?</h2>
-      <form>
-       <textarea class="form-control"  rows="5" placeholder="Comment*"></textarea>
-       <br>
-       <button type="button" class="btn btn-primary">Göndər</button>
-      </form>
-     </div> -->
-   </div>
-   
-   <div class="col-lg-3 col-md-6 box_right no-gutters">
-     
-   <div><h3 class="input_corse_h3">Pythonun əsasları</h3></div>
-     <button class="accordion_2">Pythona giriş</button>
-     <div class="panel_2">
-       <div class="container-fluid" style="padding-top:15px">
-        <div class="row">
-          <div class="col-3 cheachboxclass">
-            <a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>
-            <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
-          <div class="col-6">Ümumi məlumat</div><!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
-        </div>
-      </div>  
-       <hr>
-       <div class="container-fluid" style="padding-top:15px">
-        <div class="row">
-          <div class="col-3 cheachboxclass">
-            <a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>
-            <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
-          <div class="col-6">İlk proqram <button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>
-        </div>
-      </div>  
-       <hr>
-       <div class="container-fluid" style="padding-top:15px">
-        <div class="row">
-          <div class="col-3 cheachboxclass">
-            <a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>
-            <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
-          <div class="col-6">Dəyişənlər <button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>
-        </div>
-      </div>  
-       <hr>
-       <div class="container-fluid" style="padding-top:15px">
-        <div class="row">
-          <div class="col-3 cheachboxclass">
-            <a href="./login.html"><i class="fa fa-lock" id="lock_id_3"></i></a>
-            <input type="checkbox" id="checkboxId_3" onclick="clickCheckbox2()"></div>
-          <div class="col-6">Şərhlər <button id="clickButton_3" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>
-        </div>
-      </div>  
-     </div>
-     
-     <button class="accordion_2">Data tipləri</button>
-     <div class="panel_2">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-     </div>
-     
-     <button class="accordion_2">Operatorlar</button>
-     <div class="panel_2">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-     </div>
 
-     <button class="accordion_2">Qərarvermə və dövrlər</button>
-     <div class="panel_2">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-     </div>
-   </div>
-  </div>
+
+
+  
+
+  
+  
+
+
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <div><h1 class="mainnavbar">Pythonun əsasları</h1></div>
+ <button class="accordion_2">Pythona giriş</button>
+ <div class="panel_2">
+   <div class="container-fluid" style="padding-top:15px">
+    <div class="row">
+      <div class="col-3 cheachboxclass">
+        <a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>
+        <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+      <div class="col-6">Ümumi məlumat</div><!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+    </div>
+  </div>  
+   <hr>
+   <div class="container-fluid" style="padding-top:15px">
+    <div class="row">
+      <div class="col-3 cheachboxclass">
+        <a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>
+        <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
+      <div class="col-6">İlk proqram <button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>
+    </div>
+  </div>  
+   <hr>
+   <div class="container-fluid" style="padding-top:15px">
+    <div class="row">
+      <div class="col-3 cheachboxclass">
+        <a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>
+        <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+      <div class="col-6">Dəyişənlər <button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>
+    </div>
+  </div>  
+   <hr>
+   <div class="container-fluid" style="padding-top:15px">
+    <div class="row">
+      <div class="col-3 cheachboxclass">
+        <a href="./login.html"><i class="fa fa-lock" id="lock_id_3"></i></a>
+        <input type="checkbox" id="checkboxId_3" onclick="clickCheckbox2()"></div>
+      <div class="col-6">Şərhlər <button id="clickButton_3" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>
+    </div>
+  </div>  
+ </div>
+ 
+ <button class="accordion_2">Data tipləri</button>
+ <div class="panel_2">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ </div>
+ 
+ <button class="accordion_2">Operatorlar</button>
+ <div class="panel_2">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
  </div>
 
+ <button class="accordion_2">Qərarvermə və dövrlər</button>
+ <div class="panel_2">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ </div>
+</div>
 
-  
-  
-  
-  
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="nonespam">&#9776; </span>
+  <div><h1 class="input_corse_h1">Pythona giriş</h1></div>
+  <hr>
+  <p class="input_corse_p">
+    Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
+    <br><br>
+    Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
+    <br><br>
+    Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
+    <br><br>
+   Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
+  </p>
+  <div class="d-flex justify-content-center">
+   <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Əvvəlki</button>
+   <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Növbəti</button>
+  </div>
+  <br><br><br>
+  <!-- <div>
+    <h2 class="input_corse_h2">Bu kurs haqqında nə düşünürsən?</h2>
+   <form>
+    <textarea class="form-control"  rows="5" placeholder="Comment*"></textarea>
+    <br>
+    <button type="button" class="btn btn-primary">Göndər</button>
+   </form>
+  </div> -->
+</div>
+
+
+
+
+
+
+
   
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4" style="background: rgba(56, 90, 100, 0.92);margin-top: 20px;">
@@ -301,7 +359,6 @@
     $("input[type='text']").toggleClass("active");
   });
     </script>
-  
   
   
   
@@ -443,6 +500,20 @@
     
     </script>
     <script src="./vendors/main/curse_input.js"></script>
+    
+<script>
+  function openNav () {
+    document.getElementById("mySidenav").style.width = "500px";
+    document.getElementById("main").style.marginLeft = "500px";
+    document.getElementById("nonespam").style.display="none"
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("nonespam").style.display="block"
+  }
+  </script>
 </body>
 
 </html>
