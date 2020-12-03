@@ -81,17 +81,12 @@ color: #0A5973;
   background: #FFFFFF;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  /* text-align: center; */
- }
- .correctPassword{
-   height: 401px !important;
- }
+  border-radius: 10px; }
  .profileInfo img{
    /* margin-left: 39%;
   width: 107px;
   height: 107px; */
-  border-radius: 50%;
+  border-radius: 5rem;
  }
 
  .profileInfo p, .correctPassword p{
@@ -193,7 +188,46 @@ padding: 0 60px 0  60px;
 }
 }
 
+.profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
 
+.file-upload {
+    display: none;
+}
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 72px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.p-image {
+  position: absolute;
+  top: 167px;
+  /* right: 30px; */
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
 
 </style>
 <body>
@@ -254,7 +288,25 @@ padding: 0 60px 0  60px;
           <br>
           <div class="profileInfo" >
               <div class="container" style="padding: 40px 40px;">
-                <div class="d-flex justify-content-center"><img src="./img/Mask Group.png" class="media-object "></div>
+                <div class="d-flex justify-content-center">
+                <div class="container ">
+                  <div class="row  justify-content-center" >
+                    <div class="small-12 medium-2 large-2 columns">
+                      <div class="">
+                        <!-- User Profile Image -->
+                        <img class="profile-pic" src="img/photo-1438761681033-6461ffad8d80.jpg">
+                 
+                        <!-- Default Image -->
+                        <!-- <i class="fa fa-user fa-5x"></i> -->
+                      </div>
+                      <div class="">
+                        <i class="fa fa-camera upload-button"></i>
+                         <input class="file-upload" type="file" accept="image/*"/>
+                      </div>
+                   </div>
+                   </div>
+                </div>
+                </div>
                 
                 <p>Ad, soyad</p>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
@@ -429,7 +481,7 @@ padding: 0 60px 0  60px;
   <script src="js/theme.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="./vendors/main/main_page_corse.js"></script>
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script>
 var header = document.getElementById("correctUl");
 var btns = header.getElementsByClassName("correctLi");
@@ -464,7 +516,32 @@ for (var i = 0; i < btns.length; i++) {
     });
   });
   </script>
+<script>
+  $(document).ready(function() {
 
+    
+var readURL = function(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.profile-pic').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+$(".file-upload").on('change', function(){
+    readURL(this);
+});
+
+$(".upload-button").on('click', function() {
+   $(".file-upload").click();
+});
+});
+</script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src="./js/search.js"></script>
   <script src="./vendors/main/corse_main_api.js"></script>
