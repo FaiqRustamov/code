@@ -31,7 +31,7 @@
   }
   .sidenav {
   height: 70%;
-  width: 500px;
+  width: 34%;
   position: absolute;
   z-index: 1;
   top: 100px;
@@ -67,7 +67,7 @@
 #main {
   transition: margin-left .5s;
   padding: 16px;
-  margin-left: 500px;
+  margin-left: 34%;
 }
 
 @media screen and (max-height: 450px) {
@@ -80,6 +80,27 @@
  .mainnavbar{
    color: white;
  }
+ 
+/* @media screen and (max-width: 600px){
+  #main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 0;
+} 
+.sidenav {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  background-color: #0a5973;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+} */
 </style>
 <body>
   
@@ -234,9 +255,6 @@
    </form>
   </div> -->
 </div>
-
-
-
 
 
 
@@ -502,8 +520,8 @@
     
 <script>
   function openNav () {
-    document.getElementById("mySidenav").style.width = "500px";
-    document.getElementById("main").style.marginLeft = "500px";
+    document.getElementById("mySidenav").style.width = "34%";
+    document.getElementById("main").style.marginLeft = "34%";
     document.getElementById("nonespam").style.display="none"
   }
   
