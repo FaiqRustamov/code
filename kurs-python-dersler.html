@@ -80,6 +80,59 @@
  .mainnavbar{
    color: white;
  }
+ .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #0a5973;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:#0a5973 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
  
 /* @media screen and (max-width: 600px){
   #main {
@@ -241,6 +294,14 @@
     <br><br>
    Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry’s standard dummy text.
   </p>
+
+  <div style="display: inline; float: right; margin-top: -50px;">
+    <div class="popup" onclick="myFunction()">
+      <div style="padding: 0 70px;"><img src="https://img.icons8.com/clouds/80/000000/puzzle.png"/></div>
+      <span class="popuptext" id="myPopup">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, est iste accusamus quae placeat quam minus dolor, obcaecati tenetur, similique officia ipsa fugiat facere nostrum. Autem temporibus odio pariatur eligendi perspiciatis possimus sapiente quasi nemo nam nesciunt neque natus illo ea nobis culpa omnis asperiores praesentium amet, totam quam est?</span>
+    </div>
+  </div>
+  
   <div class="d-flex justify-content-center">
    <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Əvvəlki</button>
    <button id="clickButton_input" onclick="window.location.href='./corse_input.html'" class="paner_into_button">Növbəti</button>
@@ -257,8 +318,13 @@
 </div>
 
 
-
-
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
   
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4" style="background: rgba(56, 90, 100, 0.92);margin-top: 20px;">
