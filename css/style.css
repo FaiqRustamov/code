@@ -3266,8 +3266,8 @@ h3{
     position: absolute; }
 
   .header_area .navbar {
-    background: rgba(10, 89, 115, 0.84);
-    opacity: 0.9;}
+    background: rgba(10, 89, 115, 1);
+    opacity: 1;}
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
