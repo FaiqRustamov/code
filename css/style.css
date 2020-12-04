@@ -380,7 +380,7 @@ color:rgba(255, 255, 255, 0.76);
   z-index: 99;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
-    background: rgba(10, 89, 115, 0.84);
+    background: rgba(10, 89, 115, 1);
     padding: 0px;
     border: 0px;
     border-radius: 0px; }
