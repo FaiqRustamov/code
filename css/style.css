@@ -622,7 +622,7 @@ color:rgba(255, 255, 255, 0.76);
   background-size: cover;
   padding-top: 0 !important; }
   .banner_area .banner_inner {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 100%;
     min-height: 462px;
