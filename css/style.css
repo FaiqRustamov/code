@@ -632,7 +632,7 @@ color:rgba(255, 255, 255, 0.76);
       left: 0;
       right: 0;
       top: 0;
-      bottom: 0;
+      bottom: 162px;
       background: rgba(69, 51, 3, 0.41); }
     .banner_area .banner_inner .banner_content {
       position: relative;
@@ -4134,7 +4134,7 @@ form.example::after {
 .main_corese_page_h1{
   color: white;
   font-size: 40px !important;
-  margin-top: 250px;
+  margin-top: 170px;
 }
 .paner_into_button{
   background-color: #0a5973;
