@@ -618,7 +618,7 @@ color:rgba(255, 255, 255, 0.76);
   position: relative;
   background: url(../img/banner/main_bacground_img.png) no-repeat center center;
   z-index: 1;
-  min-height: 462px;
+  min-height: 300px;
   background-size: cover;
   padding-top: 0 !important; }
   .banner_area .banner_inner {
@@ -4106,7 +4106,7 @@ form.example::after {
 }
 .position_card_01{
   position: relative; 
-  top: -300px; 
+  top: -100px; 
 }
 @media (max-width: 991px){
   .card_position_1{
