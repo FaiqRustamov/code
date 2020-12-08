@@ -166,7 +166,7 @@ a.article:hover {
 
 .kld .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+   
 }
 
 .kld ul.components {
@@ -239,12 +239,12 @@ a.article:hover {
 .textcol{
     height: 97%;
   
-    background-color: rebeccapurple;
+    background-color: rgba(10, 89, 115, 1);;
 }
 .textcol2{
     /* height: 97%; */
     overflow: auto;
-    background-color: rebeccapurple;
+    background-color: rgba(10, 89, 115, 1);;
 }
 /* ---------------------------------------------------
     CONTENT STYLE
