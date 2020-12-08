@@ -24,6 +24,19 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Font Awesome JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+  integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+  crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+  integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/cursecss.css">
 </head>
 <!-- <style>
   .cheachboxclass{
@@ -158,7 +171,7 @@
 } */
 </style> -->
 
-<style>
+<!-- <style>
   #wrapper {
     overflow-x: hidden;
   }
@@ -203,7 +216,7 @@
       margin-left: -27rem;
     }
   }
-</style>
+</style> -->
 
 <body>
 
@@ -267,304 +280,367 @@
 
 
 
-  <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light" id="sidebar-wrapper" style="height: 50%;">
 
-      <div class="list-group list-group-flush" style=" background-color: #0a5973; padding: 10px; ">
-        <div>
-          <h2 class="mainnavbar" style="text-align: center">Pythonun əsasları</h2>
-        </div>
 
-        <button class="accordion_2">1. Pythona giriş</button>
-        <div class="panel_2">
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>-->
-                <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
-              <div class="col-6">Ümumi məlumat</div>
-              <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+
+
+
+
+
+
+
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav class="kld">
+        <div class="textcol">
+            <div class="sidebar-header">
+                <div class="container-fluid no-gutters">
+                    <div class="row">
+                        <div class="col-9 no-gutters">
+                          <h2 class="mainnavbar" style="text-align: center">Pythonun əsasları</h2>
+                        </div>
+                        <div class="col-3 no-gutters">
+                            <button type="button" id="sidebarCollapse2" class="btn btn-info ngnon2"
+                                style="float: right;">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>-->
-                <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
-              <div class="col-6">İlk proqram </div>
-              <!--<button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+            <button class="accordion_2">1. Pythona giriş</button>
+            <div class="panel_2">
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>-->
+                    <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+                  <div class="col-6">Ümumi məlumat</div>
+                  <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>-->
+                    <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
+                  <div class="col-6">İlk proqram </div>
+                  <!--<button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+                    <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+                  <div class="col-6">Dəyişənlər </div>
+                  <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+                    <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+                  <div class="col-6">Şərhlər </div>
+                  <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+                    <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+                  <div class="col-6">Çalışma №1 </div>
+                  <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+                    <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+                  <div class="col-6">Çalışma №2 </div>
+                  <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_3"></i></a>-->
+                    <input type="checkbox" id="checkboxId_3" onclick="clickCheckbox2()"></div>
+                  <div class="col-6">Test tapşırıqları </div>
+                  <!--<button id="clickButton_3" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+                </div>
+              </div>
+              <hr>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
-                <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
-              <div class="col-6">Dəyişənlər </div>
-              <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+    
+    
+            <button class="accordion_2">2. Data tipləri</button>
+            <div class="panel_2">
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+                  <div class="col-6">Ümumi məlumat</div>
+                  <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+                  <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
+                      class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+                  <div class="col-6">Tam ədədlər (int)</div>
+                  <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+                  <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
+                      class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+                  <div class="col-6">Həqiqi ədədlər (float)</div>
+                  <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+                  <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
+                      class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+                </div>
+              </div>
+              <hr>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
-                <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
-              <div class="col-6">Şərhlər </div>
-              <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+    
+            <button class="accordion_2">3. Operatorlar</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
-                <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
-              <div class="col-6">Çalışma №1 </div>
-              <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+    
+            <button class="accordion_2">4. Qərarvermə və dövrlər</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
-                <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
-              <div class="col-6">Çalışma №2 </div>
-              <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+    
+            <button class="accordion_2">5. Sinif</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_3"></i></a>-->
-                <input type="checkbox" id="checkboxId_3" onclick="clickCheckbox2()"></div>
-              <div class="col-6">Test tapşırıqları </div>
-              <!--<button id="clickButton_3" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+    
+            <button class="accordion_2">6. Siyahı və kortej</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-        </div>
-
-
-        <button class="accordion_2">2. Data tipləri</button>
-        <div class="panel_2">
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
-              <div class="col-6">Ümumi məlumat</div>
-              <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
-              <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
-                  class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+    
+            <button class="accordion_2">7. Lüğət və çoxluqlar</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
-              <div class="col-6">Tam ədədlər (int)</div>
-              <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
-              <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
-                  class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+    
+            <button class="accordion_2">8. Funksiyalar</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
-              <div class="col-6">Həqiqi ədədlər (float)</div>
-              <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
-              <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
-                  class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+    
+            <button class="accordion_2">9. Siniflər</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-        </div>
-
-        <button class="accordion_2">3. Operatorlar</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">4. Qərarvermə və dövrlər</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">5. Sinif</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">6. Siyahı və kortej</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">7. Lüğət və çoxluqlar</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">8. Funksiyalar</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">9. Siniflər</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">10. Modullar</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">11. Fayllar</button>
-        <div class="panel_2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-
-        <button class="accordion_2">12. Xətalar və istisnalar</button>
-        <div class="panel_2">
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>-->
-                <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
-              <div class="col-6">Ümumi məlumat</div>
-              <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+    
+            <button class="accordion_2">10. Modullar</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
-          <div class="container-fluid" style="padding-top:5px">
-            <div class="row">
-              <div class="col-3 cheachboxclass">
-                <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>-->
-                <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
-              <div class="col-6">Son söz </div>
-              <!--<button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+    
+            <button class="accordion_2">11. Fayllar</button>
+            <div class="panel_2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
             </div>
-          </div>
-          <hr>
+    
+            <button class="accordion_2">12. Xətalar və istisnalar</button>
+            <div class="panel_2">
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>-->
+                    <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+                  <div class="col-6">Ümumi məlumat</div>
+                  <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid" style="padding-top:5px">
+                <div class="row">
+                  <div class="col-3 cheachboxclass">
+                    <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>-->
+                    <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
+                  <div class="col-6">Son söz </div>
+                  <!--<button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+                </div>
+              </div>
+              <hr>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $(".ngnon").hide();
+                     let w=$(window).width();
+                    if(w<769){
+                        $(".ngnon").show();  
+                    }
+                    console.log (w);
+
+                    
+
+
+                    $(".ngnon2").click(function () {
+                        $(".ngnon2").hide();
+                        $(".ngnon").show();
+                    });
+
+                    $(".ngnon").click(function () {
+                        $(".ngnon").hide();
+                        $(".ngnon2").show();
+                    });
+                });
+              
+
+            </script>
         </div>
-      </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
+    </nav>
+    <!-- Page Content  -->
+    <div id="content">
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-
-      <a href="#" id="menu-toggle" style="font-size: 40px; position: relative; top: 40px;"><i
-          class="fa fa-angle-double-right"></i></a>
-
-
-      <div class="container-fluid">
-        <div>
-
+        <button type="button" id="sidebarCollapse" class="btn btn-info ngnon">
+            <i class="fas fa-align-left"></i>
+        </button>
+        <div class="container-fluid">
           <div>
-            <h1 class="input_corse_h1" ; style="margin-left: 15px;">Pythona giriş</h1>
+  
+            <div>
+              <h1 class="input_corse_h1" ; style="margin-left: 15px;">Pythona giriş</h1>
+            </div>
+            <hr>
+            <p class="input_corse_p">
+              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
+              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
+              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
+              industry’s standard dummy text.
+  
+              <br><br>
+              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
+              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
+              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
+              industry’s standard dummy text.
+              <br><br>
+              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
+              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
+              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
+              industry’s standard dummy text.
+              <br><br>
+              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
+              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
+              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
+              industry’s standard dummy text.
+            </p>
+  
+            <div class="d-flex justify-content-center" ; style="text-align: center">
+              <button id="clickButton_input" onclick="window.location.href='./corse_input.html'"
+                class="paner_into_button">Əvvəlki</button>
+              <div style="padding: 10px;"></div>
+              <button id="clickButton_input" onclick="window.location.href='./sertifikat.html'"
+                class="paner_into_button">Növbəti</button>
+            </div>
+            <br><br>
+            <!-- <div>
+              <h2 class="input_corse_h2">Bu kurs haqqında nə düşünürsən?</h2>
+             <form>
+              <textarea class="form-control"  rows="5" placeholder="Comment*"></textarea>
+              <br>
+              <button type="button" class="btn btn-primary">Göndər</button>
+             </form>
+            </div> -->
           </div>
-          <hr>
-          <p class="input_corse_p">
-            Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-            dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-            industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-            only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-            industry’s standard dummy text.
-
-            <br><br>
-            Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-            dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-            industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-            only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-            industry’s standard dummy text.
-            <br><br>
-            Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-            dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-            industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-            only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-            industry’s standard dummy text.
-            <br><br>
-            Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-            dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-            industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-            only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-            industry’s standard dummy text.
-          </p>
-
-          <div class="d-flex justify-content-center" ; style="text-align: center">
-            <button id="clickButton_input" onclick="window.location.href='./corse_input.html'"
-              class="paner_into_button">Əvvəlki</button>
-            <div style="padding: 10px;"></div>
-            <button id="clickButton_input" onclick="window.location.href='./sertifikat.html'"
-              class="paner_into_button">Növbəti</button>
-          </div>
-          <br><br>
-          <!-- <div>
-            <h2 class="input_corse_h2">Bu kurs haqqında nə düşünürsən?</h2>
-           <form>
-            <textarea class="form-control"  rows="5" placeholder="Comment*"></textarea>
-            <br>
-            <button type="button" class="btn btn-primary">Göndər</button>
-           </form>
-          </div> -->
-        </div>
-        <div style=" float: right; padding-right: 20px; display: inline;" >
-          <!-- Default dropup button -->
-          <div class="btn-group dropup">
-            <img src="https://img.icons8.com/ultraviolet/50/000000/edit.png"class=" dropdown-toggle" data-toggle="dropdown" 
-            aria-expanded="false" />
-            <div class="dropdown-menu" style="padding: 10px;">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ea eaque culpa, quaerat recusandae in veniam quasi nihil assumenda dignissimos aut praesentium magnam tempora nulla facere. Dignissimos odio quibusdam est.
+          <div style=" float: right; padding-right: 20px; display: inline;" >
+            <!-- Default dropup button -->
+            <div class="btn-group dropup">
+              <img src="https://img.icons8.com/ultraviolet/50/000000/edit.png"class=" dropdown-toggle" data-toggle="dropdown" 
+              aria-expanded="false" />
+              <div class="dropdown-menu" style="padding: 10px;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ea eaque culpa, quaerat recusandae in veniam quasi nihil assumenda dignissimos aut praesentium magnam tempora nulla facere. Dignissimos odio quibusdam est.
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
     </div>
-    <!-- /#page-content-wrapper -->
+</div>
 
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -710,6 +786,36 @@
       $("input[type='text']").toggleClass("active");
     });
   </script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('.kld').toggleClass('active');
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse2').on('click', function () {
+                $('.kld').toggleClass('active');
+
+            });
+        });
+    </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
