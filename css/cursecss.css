@@ -18,7 +18,7 @@
     min-width: 25%;
     max-width: 25%;
     background: #7386D5;
-    color: #fff;
+    color: #0a5973;
     transition: all 0.3s;
 }
 
@@ -37,7 +37,7 @@
 }
 
 #sidebar ul p {
-    color: #fff;
+  color: #0a5973;
     padding: 10px;
 }
 
@@ -54,7 +54,7 @@
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
+  color: #0a5973;
     background: #6d7fcc;
 }
 
@@ -96,7 +96,7 @@ a.download {
 a.article,
 a.article:hover {
     background: #6d7fcc !important;
-    color: #fff !important;
+    color: #0a5973 !important;
 }
 
 
@@ -131,7 +131,7 @@ a.article:hover {
     min-width: 53%;
     max-width: 53%;
     background: #7386D5;
-    color: #fff;
+    color: #0a5973;
     transition: all 0.3s;
     
 }
@@ -155,9 +155,9 @@ a.article:hover {
     min-width: 25%;
     max-width: 25%;
     background: #7386D5;
-    color: #fff;
+    color: #0a5973;
     transition: all 0.3s;
-    height: 800px;
+    height: 100%;
 }
 
 .kld.active {
@@ -175,7 +175,7 @@ a.article:hover {
 }
 
 .kld ul p {
-    color: #fff;
+  color: #0a5973;
     padding: 10px;
 }
 
@@ -192,7 +192,7 @@ a.article:hover {
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
+  color: #0a5973;
     background: #6d7fcc;
 }
 
@@ -276,7 +276,7 @@ a.article:hover {
     min-width: 53%;
     max-width: 53%;
     background: #7386D5;
-    color: #fff;
+    color: #0a5973;
     transition: all 0.3s;
     height: 800px;
     
@@ -313,7 +313,7 @@ a.article:hover {
     min-width: 100%;
     max-width: 100%;
     background: #7386D5;
-    color: #fff;
+    color: #0a5973;
     transition: all 0.3s;
     height: 800px;
 }
