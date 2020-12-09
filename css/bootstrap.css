@@ -2604,7 +2604,7 @@ fieldset:disabled a.btn {
 .btn-info:not(:disabled):not(.disabled):active,
 .show>.btn-info.dropdown-toggle {
     color: #fff;
-    background-color: #117a8b;
+    background-color: #0a5973;
     border-color: #10707f
 }
 
