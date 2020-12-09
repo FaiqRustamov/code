@@ -4203,6 +4203,7 @@ cursor: pointer;
 padding: 18px;
 width: 100%;
 border: none;
+border-radius: 12px;
 text-align: left;
 outline: none;
 font-size: 20px;
