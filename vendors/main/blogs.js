@@ -8,7 +8,7 @@ let currentPage = 1;
 $(document).ready(function () {
   $.ajax({
     method: "GET",
-    url: "http://127.0.0.1:8000/blog/allblog",
+    url: "http://161.97.113.89:8000/blog/allblog",
     dataType: "json",
     success: function (data) {
       const blog_items_container = document.querySelector(".blog_left_sidebar");
