@@ -35,195 +35,124 @@
 
   <link rel="stylesheet" href="css/cursecss.css">
 </head>
-<!-- <style>
-  .cheachboxclass{
-    margin-top: 0px;
+<style>
+  .mobil-tab {
+    display: none !important;
   }
-  .sidenav {
-  height: auto;
-  width: 25%;
-  position: absolute;
-  z-index: 1;
-  top: 78px;
-  left: 0;
-  background-color: #0a5973;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+
+  @media (max-width: 627px) {
+    .repo-desktop {
+      display: none;
+    }
+
+    .mobil-tab {
+      display: block !important;
+    }
+  }
+
+  .bbtns {
+    background: #ffae00;
+    color: #fff;
+    font-size: 12px;
+    line-height: 38px;
+    display: inline-block;
+    font-weight: 500;
+    padding: 0px 24px 0px 24px;
+    border-radius: 0;
+  }
+
+  .form-control {
+    font-size: 12px;
+    line-height: 24px;
+    color: #cccccc;
+    border: solid #eeeeee;
+    border-left: 0px;
+    border-radius: 0px;
+  }
+
+  .form-group {
+    margin-bottom: 8px;
+  }
+
+  .input-group-text {
+    background: #fff;
+    border-radius: 0px;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 36px;
+    padding: 0px 0px 0px 15px;
+    border: 1px solid #eeeeee;
+    border-right: 0px;
+  }
+
+  .footermainclass {
+    padding: 35px 100px;
+  }
+
+  .fonticon {
+    font-size: 30px;
+  }
+
+  .topimgnav {
+    display: none;
+  }
+
+  .topimgnav2 {
+    display: block;
+  }
+
+
+
+  .noniconfooter{
+    display: none;
+  }
   
-}
-
-.sidenav a {
-  padding: 4px 4px 4px 4px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  background: #ffae00;
-  border-radius: 10px;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 40px;
-  margin-left: 5px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-  margin-left: 25%;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
- #nonespam{
-   display: none;
- }
- .mainnavbar{
-   color: white;
- }
- .popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #0a5973;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 8px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color:#0a5973 transparent transparent transparent;
-}
-
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
- 
-/* @media screen and (max-width: 600px){
-  #main {
-  transition: margin-left .5s;
-  padding: 16px;
-  margin-left: 0;
-} 
-.sidenav {
-  height: 70%;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 100px;
-  left: 0;
-  background-color: #0a5973;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  
-}
-} */
-</style> -->
-
-<!-- <style>
-  #wrapper {
-    overflow-x: hidden;
-  }
-
-  #sidebar-wrapper {
-    min-height: 100vh;
-    margin-left: -27rem;
-    -webkit-transition: margin .25s ease-out;
-    -moz-transition: margin .25s ease-out;
-    -o-transition: margin .25s ease-out;
-    transition: margin .25s ease-out;
-  }
-
-  #sidebar-wrapper .sidebar-heading {
-    padding: 0.875rem 1.25rem;
-    font-size: 1.2rem;
-  }
-
-  #sidebar-wrapper .list-group {
-    width: 27rem;
-  }
-
-  #page-content-wrapper {
-    min-width: 100vw;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: 0;
-  }
-
-  @media (min-width: 768px) {
-    #sidebar-wrapper {
-      margin-left: 0;
+  @media screen and (max-width: 990px) {
+    .footermainclass {
+      margin-top: 50px;
+      padding: 15px;
     }
 
-    #page-content-wrapper {
-      min-width: 0;
-      width: 100%;
+    .topimgnav2 {
+      display: none;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
-      margin-left: -27rem;
+    .topimgnav {
+      display: block;
     }
+    .noniconfooter{
+    display: inline;
   }
-</style> -->
+  .noniconfooter2{
+    display: none;
+  }
+  }
+  .footerborder{
+    border: white !important;
+  }
+</style>
 
 <body>
 
   <!--================ Start Header Menu Area =================-->
   <header class="header_area">
+
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
         <div class="container-fluid navbar_padding">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/codeyourselflogoson.png"></a>
+
+         
+
+          <a class="navbar-brand logo_h" href="index.html">
+            <img src="img/logoimg/mobillogo.svg" class="topimgnav" height="70">
+           </a> 
+         
+
+          <a href="./index.html"><img src="./img/logoimg/Artboard 1.svg" class="topimgnav2" height="85" width="230" style="padding-bottom: 5px;"> </a>
+
+          <!-- <a href="./index.html"> </a><img src="./img/logoimg/Artboard 1.svg" class="topimgnav2" height="85" width="230" style="padding-bottom: 5px;"> -->
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span> <span class="icon-bar"></span>
@@ -234,17 +163,17 @@
             <ul class="nav navbar-nav menu_nav ml-auto">
               <li class="nav-item matgin_style">
                 <div class="searchbar">
-  
+
                   <input type="text" placeholder="Axtar...">
-  
+
                   <div class="icon">
                     <i class="fas fa-search"></i>
                   </div>
                 </div>
               </li>
-              
+
               <li class="nav-item">
-                <a class="nav-link"  href="./blog.html">Bloq</a>
+                <a class="nav-link" href="./bloq.html">Bloq</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./login.html">Giriş</a>
@@ -292,15 +221,14 @@
             <div class="sidebar-header">
                 <div class="container-fluid no-gutters">
                     <div class="row">
-                        <div class="col-3 no-gutters">
-                            <button type="button" id="sidebarCollapse2" class="btn btn-info ngnon2"
-                                style="float: left; margin-top: -10px; margin-left: 257px;">
-                                <i class="fa fa-times"></i>
-                            </button>
-                        </div>
                         <div class="col-9 no-gutters">
-                          <h2 class="mainnavbar" style="text-align: center;color:white">Pythonun əsasları</h2>
+                          <h2 class="mainnavbar" style="text-align: center;color:white">Pythona giriş</h2>
                         </div>
+                        <div class="col-3 no-gutters">
+                          <button type="button" id="sidebarCollapse2" class="btn btn-info ngnon2">
+                              <i class="fa fa-times"></i>
+                          </button>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -311,7 +239,7 @@
                   <div class="col-3 cheachboxclass">
                     <!--<a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>-->
                     <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
-                  <div class="col-6">Ümumi məlumat</div>
+                  <div class="col-6" id="datacorse2"></div>
                   <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
                 </div>
               </div>
@@ -538,46 +466,11 @@
         <div class="container-fluid">
           <div>
             <div>
-              <h1 class="input_corse_h1"  style="text-align: center;">Pythona giriş</h1>
+              <h1 class="input_corse_h1"  style="text-align: center;" id="datacourse"></h1>
             </div>
             <hr>
-            <p class="input_corse_p">
-              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-              industry’s standard dummy text.
-  
-              <br><br>
-              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-              industry’s standard dummy text.
-              <br><br>
-              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-              industry’s standard dummy text.
-              <br><br>
-              Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard
-              dumy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries.imply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry’s standard dummy text. Dimply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-              only five centuries.imply dummy text of the printing and typesetting industry Lorem Ipsum has been the
-              industry’s standard dummy text.
+            <p class="input_corse_p" id="datacurse3">
+             
             </p>
   
             <div class="d-flex justify-content-center" ; style="text-align: center">
@@ -655,121 +548,141 @@
 
 
 
-  <!-- Footer -->
-  <footer class="page-footer font-small teal pt-4" style="background: rgba(56, 90, 100, 0.92);margin-top: 20px;">
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background: #0a5973;">
 
-    <!-- Footer Text -->
-    <div class="container-fluid text-center text-md-left navbar_padding"
-      style="padding-top: 60px;;padding-bottom: 60px;">
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left footermainclass">
 
-      <!-- Grid row -->
-      <div class="row">
+    <!-- Grid row -->
+    <div class="row">
 
-        <!-- Grid column -->
-        <div class="col-md-4 mt-md-0 mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
 
-          <!-- Content -->
-          <h5 class="text-uppercase footer_h5">ÜMUMİ</h5>
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÜMUMİ</h5>
 
-          <ul class="list-unstyled footer_ul_li_a">
-            <li class="footer_li">
-              <a href="./haqqimizda.html">Haqqımızda</a>
-            </li>
-            <li class="footer_li">
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="./haqqimizda.html">Haqqımızda</a>
+          </li>
+          <li class="footer_li">
+            <a href="bloq.html">Bloq</a>
+          </li>
+          <li class="footer_li">
+            <a href="faydali.html">Faydalı</a>
+          </li>
 
-              <a href="blog.html">Blog</a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
 
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÖZÜNÜ YOXLA</h5>
 
-            </li>
-            <li class="footer_li">
-              <a href="ozunu-yoxla-2.html">Faydalı</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="calismalar.html">Çalışmalar</a>
+          </li>
+          <li class="footer_li">
+            <a href="testler.html">Testlər</a>
+          </li>
+          <li class="footer_li">
+            <a href="musahibe-suallari.html">Müsahibə Sualları</a>
+          </li>
+        </ul>
 
-        <hr class="clearfix w-100 d-md-none pb-3">
+      </div>
+      <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-4 mb-md-0 mb-3">
+      <hr class="clearfix w-100 d-md-none pb-3">
 
-          <!-- Content -->
-          <h5 class="text-uppercase footer_h5">ÖZÜNÜ YOXLA</h5>
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
 
-          <ul class="list-unstyled footer_ul_li_a">
-            <li class="footer_li">
-              <a href="general-tasks.html">Çalışmalar</a>
-            </li>
-            <li class="footer_li">
-              <a href="general-quizzes.html">Testlər</a>
-            </li>
-            <li class="footer_li">
-              <a href="general-interviews.html">Müsahibə Sualları</a>
-            </li>
-          </ul>
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ƏLAQƏ</h5>
 
-        </div>
-        <!-- Grid column -->
-        <hr class="clearfix w-100 d-md-none pb-3">
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
 
-        <!-- Grid column -->
-        <div class="col-md-4 mb-md-0 mb-3">
+            <a href="mailto:info@codeyourself.com">info@codeyourself.com</a>
+          </li>
+          <li class="footer_ul_li_a_paddding footer_li">
+            <a target="_blank" href="https://www.facebook.com/codeyourself1/" class="noniconfooter"><i
+                class="fa fa-facebook-square fonticon"></i></a>
+            <a target="_blank" href="https://www.instagram.com/code_yourself/" class="noniconfooter"><i
+                class="fa fa-instagram fonticon"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/code-yourself/" class="noniconfooter"><i
+                class="fa fa-linkedin-square fonticon"></i></a>
+            <a target="_blank" href="https://t.me/codeyourself"  class="noniconfooter"><i class="fa fa-telegram fonticon"></i></a>
+            <a target="_blank" href="https://twitter.com/code_yourself"  class="noniconfooter"><i class="fa fa-twitter fonticon" ></i></a>
+<br>
+            <!-- desktop -->
+            <a target="_blank" href="https://www.facebook.com/codeyourself1/"  class="noniconfooter2"><img
+                src="./img/iconfooter/iconmonstr-facebook-4-32.png" alt="" ></a>
+            <a target="_blank" href="https://www.instagram.com/code_yourself/"><img
+                src="./img/iconfooter/iconmonstr-instagram-11-32.png" alt=""  class="noniconfooter2"></a>
+            <a target="_blank" href="https://www.linkedin.com/company/code-yourself/"><img
+                src="./img/iconfooter/iconmonstr-linkedin-1-32.png" alt=""  class="noniconfooter2"></a>
+            <a target="_blank" href="https://t.me/codeyourself"><img
+                src="./img/iconfooter/iconmonstr-telegram-1-32.png" alt=""  class="noniconfooter2"></a>
+            <a target="_blank" href="https://twitter.com/code_yourself"><img
+                src="./img/iconfooter/iconmonstr-twitter-4-32.png" alt=""  class="noniconfooter2"></a>
+          </li>
+          <hr class="clearfix w-100 d-md-none pb-3">
+        </ul>
+      </div>
+      <!-- Grid column -->
 
-          <!-- Content -->
-          <h5 class="text-uppercase footer_h5">ƏLAQƏ</h5>
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
 
-          <ul class="list-unstyled footer_ul_li_a">
-            <li class="footer_li">
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ABUNƏ OL</h5>
+        <h4 class="" style="color: rgba(255, 255, 255, 0.76);">Yeniliklərdən xəbərdar ol</h4><br />
 
-              <a href="#!">Email: info@codeyourself.com</a>
-            </li>
-            <li class="footer_ul_li_a_paddding footer_li">
-              <a target="_blank" href="https://www.facebook.com/codeyourself1/"><img
-                  src="https://img.icons8.com/ios/25/000000/facebook--v2.png" /></i>
-              </a>
-
-              <a target="_blank" href="https://www.instagram.com/code_yourself/"><img
-                  src="https://img.icons8.com/ios/25/000000/instagram-new--v2.png" /></a>
-
-              <a target="_blank" href="https://www.linkedin.com/company/code-yourself/"><img
-                  src="https://img.icons8.com/ios/25/000000/linkedin.png" /></a>
-
-              <a target="_blank" href="https://t.me/codeyourself"><img
-                  src="https://img.icons8.com/ios/25/000000/telegram-app.png" /></a>
-
-              <a target="_blank" href="https://twitter.com/code_yourself"><img
-                  src="https://img.icons8.com/ios/25/000000/twitter--v2.png" /></a>
-
-            </li>
-            <hr class="clearfix w-100 d-md-none pb-3">
-          </ul>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-
-
+        <aside class="single-sidebar-widget newsletter_widget">
+          <div class="form-group d-flex flex-row">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="ti-email" aria-hidden="true" style="margin-left: -5px; margin-right: 5px;"></i></div>
+              </div>
+              <input type="text" class="form-control footerborder" id="inlineFormInputGroup" placeholder="Email"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+            </div>
+            <a href="#" class="bbtns">Təsdiqlə</a>
+          </div>
+          <div class="br"></div>
+        </aside>
 
 
 
         <!-- Grid row -->
 
       </div>
-      <!-- Footer Text -->
+      <!-- Grid column -->
 
-
-
-  </footer>
-  <!-- Footer -->
-
-  <footer>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background: #385A64; color: white;"> <i class="fa fa-heart"
-        style="color:red;font-size: 18px;"></i> ilə Azərbaycanda hazırlanıb © 2021
     </div>
+    <!-- Grid row -->
 
-    <!-- Copyright -->
-  </footer>
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
+<footer>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background: #104e67; color: white;"> Azərbaycanda <i
+      class="fa fa-heart" style="color:red;font-size: 18px;"></i> ilə hazırlanıb © 2021
+  </div>
+
+  <!-- Copyright -->
+</footer>
+
 
 
   <script>
@@ -917,7 +830,7 @@
 
   </script>
   <script src="./vendors/main/curse_input.js"></script>
-
+<script src="./vendors/main/courseDetals.js"></script>
 </body>
 
 </html>

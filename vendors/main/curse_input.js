@@ -2,7 +2,7 @@
 $(document).ready(function () {
   $.ajax({
     method: "GET",
-    url: "http://161.97.113.89:8000/api/v1/content/?topic_id=1",
+    url: "http://161.97.113.89/api/v1/content/?topic_id=1",
     dataType: "json",
     success: function (data) {
     

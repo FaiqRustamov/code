@@ -1,5 +1,5 @@
 const forms = {
-  baseURL: "http://161.97.113.89:8000",
+  baseURL: "http://161.97.113.89/",
   register: () => {
     let data = $("#register-form").serializeArray();
     let registerData = {};
