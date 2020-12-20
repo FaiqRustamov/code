@@ -19,10 +19,10 @@ $(document).ready(function () {
       <div class="row">
       <div class="col-lg-4 col-md-6">
         <div class="single_feature_2">
+          <a href="kurs-python.html">
           <center>
-            <img class="img-fluid" style="padding" src="${data[0].photo}" alt="" />
-          </center>
-          <a href="course-details.html">
+          <img class="img-fluid" style="padding" src="${data[0].photo}" alt="" />
+        </center>
           <div class="desc">
           <h2 class="card-title corse_h2">${data[0].name}</h2>
           <p class="card-text corse_p">${data[0].description}</p>
@@ -33,10 +33,10 @@ $(document).ready(function () {
 
       <div class="col-lg-4 col-md-6">
         <div class="single_feature_2">
+          <a href="kurs-python.html">
           <center>
-            <img class="img-fluid" src="${data[0].photo}" alt="" />
+            <img class="img-fluid" src="${data[1].photo}" alt="" />
           </center>
-          <a href="">
           <div class="desc">
           <h2 class="card-title corse_h2">${data[1].name}</h2>
           <p class="card-text corse_p">${data[1].description}</p>
@@ -50,7 +50,7 @@ $(document).ready(function () {
           <center>
             <img class="img-fluid" src="" alt="" />
           </center>
-          <a href="">
+          <a href="kurs-python.html">
           <div class="desc">
           <h2 class="card-title corse_h2"></h2>
           <p class="card-text corse_p"></p>
