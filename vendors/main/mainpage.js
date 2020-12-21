@@ -23,8 +23,9 @@ $(document).ready(function () {
           <center>
           <img class="img-fluid" style="padding" src="${data[0].photo}" alt="" />
         </center>
+          <br>
           <div class="desc">
-          <h2 class="card-title corse_h2">${data[0].name}</h2>
+          <h2 class="card-title corse_h2" style="text-align: center;">${data[0].name}</h2>
           <p class="card-text corse_p">${data[0].description}</p>
           </div>
           </a>
@@ -37,8 +38,9 @@ $(document).ready(function () {
           <center>
             <img class="img-fluid" src="${data[1].photo}" alt="" />
           </center>
+          <br>
           <div class="desc">
-          <h2 class="card-title corse_h2">${data[1].name}</h2>
+          <h2 class="card-title corse_h2" style="text-align: center;">${data[1].name}</h2>
           <p class="card-text corse_p">${data[1].description}</p>
           </div>
           </a>
@@ -48,11 +50,12 @@ $(document).ready(function () {
       <div class="col-lg-4 col-md-6">
         <div class="single_feature_2">
           <center>
-            <img class="img-fluid" src="" alt="" />
+            <img class="img-fluid" src="${data[2].photo}" alt="" />
           </center>
+          <br>
           <a href="kurs-python.html">
           <div class="desc">
-          <h2 class="card-title corse_h2"></h2>
+          <h2 class="card-title corse_h2" style="text-align: center;"></h2>
           <p class="card-text corse_p"></p>
           </div>
           </a>
