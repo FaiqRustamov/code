@@ -55,8 +55,8 @@ $(document).ready(function () {
           <br>
           <a href="kurs-python.html">
           <div class="desc">
-          <h2 class="card-title corse_h2" style="text-align: center;"></h2>
-          <p class="card-text corse_p"></p>
+          <h2 class="card-title corse_h2" style="text-align: center;">${data[2].name}</h2>
+          <p class="card-text corse_p">${data[2].description}</p>
           </div>
           </a>
         </div>
