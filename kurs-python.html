@@ -191,7 +191,7 @@
           </div>
           
           <div id="Mündəricat" class="tabcontent">
-            <button class="accordion">Pytona giriş</button>
+            <button class="accordion" id="dataAccardionname1">Pytona giriş</button>
            
               <div class="panel" >
                 <!--<div class="row" style="padding: 10px 25px;"> 
@@ -200,7 +200,7 @@
                <div class="row" style="padding: 5px 16px; width: 600px">
                 <!-- lesson-1 -->
                 <div class="col-1"><img src="./img/courses/movzular.svg" alt="" class="img-card"></div>
-                <div class="col-5">Ümumi məlumat <a class="paner_into_button" href="kurs-python-dersler.html">Bax</a></div>
+                <div class="col-5" id="accardion1">Ümumi məlumat <a class="paner_into_button" href="kurs-python-dersler.html">Bax</a></div>
                 <!--<div class="col-3" style="text-align: right;"><i class="fa fa-clock-o"></i> 30deq</div>-->
                 <!-- lesson-1 -->         
                </div>
@@ -208,7 +208,7 @@
                <div class="row" style="padding: 5px 16px; width: 600px">
                 <!-- lesson-2 -->
                 <div class="col-1"><img src="./img/courses/movzular.svg" alt="" class="img-card"></div>
-                <div class="col-5">İlk proqram <a class="paner_into_button" href="#">Bax</a></div>
+                <div class="col-5" id="accardion2">İlk proqram <a class="paner_into_button" href="#">Bax</a></div>
                 <!-- <div class="col-3" style="text-align: right;"><i class="fa fa-clock-o"></i> 30deq</div>--> 
                 <!-- lesson-2 -->         
                </div>
@@ -233,12 +233,12 @@
               </div>
           
             
-            <button class="accordion">Data tipləri</button>
+            <button class="accordion" id="dataAccardionname2">Data tipləri</button>
             <div class="panel">
    <div class="container-fluid">
     <div class="row">
         <div class="col-1"><img src="./img/courses/movzular.svg" alt="" class="img-card"></div>
-      <div class="col-6">Ümumi məlumat</div><!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+      <div class="col-6" id="accardion21">Ümumi məlumat</div><!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
        <a href="./login.html" class="padding_element"; style="padding-top: 0px; padding-bottom: 0px;"><i class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
      </div>
     </div>  
@@ -473,7 +473,7 @@
 
   
    <!--================ Start footer Area  =================-->
-
+  <script src="./vendors/main/kurs-python.js"></script>
   <script>
     $(document).ready(function () {
     $('body').bind('cut copy', function (e) {
