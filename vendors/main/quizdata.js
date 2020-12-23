@@ -1,18 +1,39 @@
 let currentPage = 1;
 let con = 0;
-$(document).ready(function () {
-  $.ajax({
+
+var return_first = function () {
+  var tmp = null;
+ 
+   $.ajax({
+    'async': false,
     method: "GET",
     url: "http://161.97.113.89/api/v1/test/?main_id=1",
     dataType: "json",
-    success: function (Data) {
-      console.log(data[0].question);
-     
-    },
+      'success': function (data) {
+          tmp = data;
+      }
   });
-});
-  
-var QuestionsArray = [
+  return tmp;
+}();
+
+console.log(return_first)
+let QuestionsArray=[];
+
+for(let i=1; i<=return_first.length; i++){
+   let arrayIndex = 0;
+    let tempobj={
+    question:return_first[arrayIndex].question,
+    correctAnswer:return_first[arrayIndex].main,
+    answers:return_first[arrayIndex].quest_test.map(a => a.question),
+    point:return_first[arrayIndex].point
+  }
+  arrayIndex++;
+   QuestionsArray.push(tempobj);
+}
+
+console.log(QuestionsArray)
+
+var QuestionsArray1 = [
   {
     question: 'Entomology is the science that studies:',
     answers: [
@@ -100,7 +121,7 @@ var quiz = document.getElementById('quiz'),
 quiz.addEventListener('submit',function(e) {
   e.preventDefault();
 });
-
+console.log(QuestionsArray1)
 
 var QuestionElement = function(QuestionObject,parentElement,questionPosition) {
   this.question = QuestionObject;
