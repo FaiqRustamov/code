@@ -28,10 +28,12 @@ for(let i=1; i<=return_first.length; i++){
     point:return_first[arrayIndex].point
   }
   arrayIndex++;
+  console.log(tempobj.point);
    QuestionsArray.push(tempobj);
 }
 
-console.log(QuestionsArray)
+console.log(QuestionsArray);
+
 
 var QuestionsArray1 = [
   {
@@ -42,7 +44,7 @@ var QuestionsArray1 = [
       'The origin and history of technical and scientific terms',
       'The formation of rocks'
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
   },
   {
     question: 'Galileo was an Italian astronomer who:',
@@ -52,7 +54,7 @@ var QuestionsArray1 = [
       'discovered that the movement of pendulum produces a regular time measurement',
       'All of the above'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
   },
   {
     question: 'Exposure to sunlight helps a person improve his health because:',
@@ -62,7 +64,7 @@ var QuestionsArray1 = [
       'the pigment cells in the skin get stimulated and produce a healthy tan',
       'the ultraviolet rays convert skin oil into Vitamin D'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
   },
   {
     question: '\'OS\' computer abbreviation usually means:',
@@ -72,7 +74,7 @@ var QuestionsArray1 = [
       'Operating System',
       'Optical Sensor'
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question: 'Which scientist discovered the radioactive element radium?',
@@ -82,7 +84,7 @@ var QuestionsArray1 = [
       'Benjamin Franklin',
       'Marie Curie'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
   },
   {
     question: 'The great Victoria Desert is located in:',
@@ -92,7 +94,7 @@ var QuestionsArray1 = [
       'Australia',
       'North America'
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question: 'Euclid was',
@@ -102,7 +104,7 @@ var QuestionsArray1 = [
       'Propounded the geometrical theorems',
       'All of the above'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
   },
   {
     question: 'Who invented Dynamite?',
