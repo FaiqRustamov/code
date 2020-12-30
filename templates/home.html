@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+
+            </div>
+        </div>
+    </div>
+    <form method="POST" action="{{ url_for('home') }}">
+        <textarea name="code" cols="40" rows="15"></textarea>
+        <input type="submit" value="Run">
+    </form>
+
+    <h6>Result</h6>
+
+    {% if res|length > 0 %}
+    {% if res["success"] %}
+    <p style="color: green;">Output: <span style="font-weight: bold;">SUCCESS</span></p>
+    {% else %}
+    <p style="color: red">Completion percentage: {{ res["pass_percent"] }} %</p>
+    <p style="color: red">Problems: {{ res["problems"] }}</p>
+    {% endif %}
+    {% else %}
+    <p></p>
+    {% endif %}
+    
+    <script src="./vendors/main/studies.js"></script>
+</body>
+
+</html>
