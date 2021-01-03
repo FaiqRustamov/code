@@ -215,7 +215,7 @@
     width: 0;
     position: absolute;
     z-index: 1;
-    top: 87px;
+    top: 85px;
     left: 0;
     bottom: -90px;
     background-color: #fff;
@@ -236,7 +236,7 @@
   
   .sidenav .closebtn {
     position: absolute;
-    top: 30px;
+    top: 0px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -445,6 +445,17 @@
     .footerborder{
       border: white !important;
     }
+
+    @media screen and (max-width: 990px) {
+      .trackline{
+        border-right: none !important;
+        height: 100% !important;
+      }
+    }
+    .trackline{
+        border-right: 2px solid rgb(255, 208, 0);
+        height: 900px;
+      }
   </style>
 
 <body>
@@ -526,20 +537,17 @@
 
 <div style="height: 1000px;">
   
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="pressopen">&times;</a>
-    <div class="textcol">
+  <div id="mySidenav" class="sidenav" style="background-color: #0a5973;">
+   
+   
       <div class="sidebar-header">
           <div class="container-fluid no-gutters">
               <div class="row">
-                  <div class="col-9 no-gutters">
+                  <div class="col-12 no-gutters">
                     <h2 class="mainnavbar" style="text-align: center;color:white">Pythona giriş</h2>
+                  <div>  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="pressopen">&times;</a></div>
                   </div>
-                  <div class="col-3 no-gutters">
-                    <button type="button" id="sidebarCollapse2" class="btn btn-info ngnon2">
-                        <i class="fa fa-times"></i>
-                    </button>
-                </div>
+                 
               </div>
           </div>
       </div>
@@ -767,26 +775,27 @@
         
 
       </script>
-  </div>
+ 
   </div>
   
   <div id="main">
   
     <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="pressclose">&#9776; </span>
-    <div class="container-fluid" style="height: 900px;padding: 10px;" >
-      <div class="row" >
-        <div class="col-md-4 tracakborder tracakborder2"  >
-          <p class="mt-5" style="padding: 5px;">
+    <div class="container-fluid" style="height: 900px;padding: 10px; ">
+      <div class="row">
+        <div class="col-md-4 trackline" >
+          <p class="mt-1" style="padding: 5px;">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus similique, earum sed consequatur, molestias voluptate, cum atque quod delectus qui iure fuga debitis esse numquam perspiciatis rem hic reprehenderit? Exercitationem, assumenda totam dolorum beatae odio eum eos, officiis, vero quisquam veniam ab omnis ad ratione facilis error? Vero, ipsum placeat.
            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti odit eum, eaque dolore voluptatum quas tenetur consequuntur asperiores ea veniam magnam voluptas explicabo maiores nostrum facilis facere harum animi. Eaque.
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error libero perspiciatis, provident quo minus minima fugit dolorem quasi ab nihil saepe impedit sed soluta ea placeat dolor dicta labore voluptates?
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam minus sequi, unde soluta dolores libero mollitia, in rerum fugiat exercitationem error sit vitae, quia molestias provident quasi nihil corporis et eius dicta? Impedit, quia! Illo neque a libero delectus quas quam. Voluptatibus, provident non dolore debitis a dicta iste.
           </p>
         </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        
+        <div class="col-md-8">
        
-        <div class="col-md-8" >
-       
-            <div class="exercise">
+            
               
               <div data-datacamp-exercise data-lang="python" data-height="">
                 <code data-type="pre-exercise-code"></code>
@@ -803,13 +812,13 @@
                 <code data-type="sct"></code>
                 <div data-type="hint">Just press 'Run'.</div>
               </div>
-            </div>
+            
          
         </div>
     
       </div>
     </div>
-     
+    
   </div>
 </div>
   
