@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <title>Code yourself - change yourself</title>
+  <!-- Bootstrap CSS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Font Awesome JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+  integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+  crossorigin="anonymous"></script>
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+
+    [data-datacamp-exercise] {
+        visibility: hidden;
+      }
+      .lm_row > .lm_item {
+  float: left !important;
+}
+.lm_splitter.lm_horizontal {
+  height: 0 !important;
+  float: left !important;
+   width: 999px !important; 
+}
+.dcl__index-module__exercise--3V29r {
+    position: relative;
+    flex: 1;
+    
+}
+.lm_stack{
+  width: 100% !important;
+}
+ .ace_folding-enabled{
+   background-color:#0a5973 !important;
+ color:white !important;
+ }
+ .lm_header{
+  background-color:#0a5973 !important;
+ }
+ .ace_content{
+  background-color:#e5e3e3 !important;
+  /*color:white !important;*/
+ }
+ .dcl__Footer-module__footer--1ztal{
+  background-color:#0a5973 !important;
+ }
+ .lm_root{
+
+    width: 100% !important;
+    height: 252px;
+
+ }
+ .lm_item{
+  width: 100% !important;
+    height: 252px;
+ }
+ .lm_items{
+   width: 100% !important;
+ }
+ .lm_item_container{
+  width: 100% !important; 
+ }
+ .lm_stack{
+  width: 100% !important; 
+ }
+ .ace_content{
+  width: 100% !important; 
+ }
+ .lm_content{
+  width: 100% !important;  
+ }
+ .dcl__Button-module__primary--gfhd3 {
+    background-color: #ffae00 !important;
+    color: #ffffff !important;
+}
+.dcl__Button-module__secondary-light--e55J6 {
+    background-color: #ffae00 !important;
+    color: #ffffff !important;
+}
+  </style>
+
+  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+  <link rel="stylesheet" href="css/cursecss.css">
+</head>
+<style>
+  .mobil-tab {
+    display: none !important;
+  }
+
+  @media (max-width: 627px) {
+    .repo-desktop {
+      display: none;
+    }
+
+    .mobil-tab {
+      display: block !important;
+    }
+  }
+
+  .bbtns {
+    background: #ffae00;
+    color: #fff;
+    font-size: 12px;
+    line-height: 38px;
+    display: inline-block;
+    font-weight: 500;
+    padding: 0px 24px 0px 24px;
+    border-radius: 0;
+  }
+
+  .form-control {
+    font-size: 12px;
+    line-height: 24px;
+    color: #cccccc;
+    border: solid #eeeeee;
+    border-left: 0px;
+    border-radius: 0px;
+  }
+
+  .form-group {
+    margin-bottom: 8px;
+  }
+
+  .input-group-text {
+    background: #fff;
+    border-radius: 0px;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 36px;
+    padding: 0px 0px 0px 15px;
+    border: 1px solid #eeeeee;
+    border-right: 0px;
+  }
+
+  .footermainclass {
+    padding: 35px 100px;
+  }
+
+  .fonticon {
+    font-size: 30px;
+  }
+
+  .topimgnav {
+    display: none;
+  }
+
+  .topimgnav2 {
+    display: block;
+  }
+
+
+
+  .noniconfooter{
+    display: none;
+  }
+  
+  @media screen and (max-width: 990px) {
+    .footermainclass {
+      margin-top: 50px;
+      padding: 15px;
+    }
+
+    .topimgnav2 {
+      display: none;
+    }
+
+    .topimgnav {
+      display: block;
+    }
+    .noniconfooter{
+    display: inline;
+  }
+  .noniconfooter2{
+    display: none;
+  }
+  }
+  .footerborder{
+    border: white !important;
+  }
+</style>
+<style>
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 87px;
+    left: 0;
+    bottom: -90px;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+  <style>
+    .mobil-tab {
+      display: none !important;
+    }
+  
+    @media (max-width: 627px) {
+      .repo-desktop {
+        display: none;
+      }
+  
+      .mobil-tab {
+        display: block !important;
+      }
+    }
+  
+    .bbtns {
+      background: #ffae00;
+      color: #fff;
+      font-size: 12px;
+      line-height: 38px;
+      display: inline-block;
+      font-weight: 500;
+      padding: 0px 24px 0px 24px;
+      border-radius: 0;
+    }
+  
+    .form-control {
+      font-size: 12px;
+      line-height: 24px;
+      color: #cccccc;
+      border: solid #eeeeee;
+      border-left: 0px;
+      border-radius: 0px;
+    }
+  
+    .form-group {
+      margin-bottom: 8px;
+    }
+  
+    .input-group-text {
+      background: #fff;
+      border-radius: 0px;
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 36px;
+      padding: 0px 0px 0px 15px;
+      border: 1px solid #eeeeee;
+      border-right: 0px;
+    }
+  
+    .footermainclass {
+      padding: 35px 100px;
+    }
+  
+    .fonticon {
+      font-size: 30px;
+    }
+  
+    .topimgnav {
+      display: none;
+    }
+  
+    .topimgnav2 {
+      display: block;
+    }
+  
+  
+  
+    .noniconfooter{
+      display: none;
+    }
+    
+    @media screen and (max-width: 990px) {
+      .footermainclass {
+        margin-top: 50px;
+        padding: 15px;
+      }
+  
+      .topimgnav2 {
+        display: none;
+      }
+  
+      .topimgnav {
+        display: block;
+      }
+      .noniconfooter{
+      display: inline;
+    }
+    .noniconfooter2{
+      display: none;
+    }
+    }
+    .footerborder{
+      border: white !important;
+    }
+
+    
+  </style>
+  <style>
+    .mobil-tab {
+      display: none !important;
+    }
+  
+    @media (max-width: 627px) {
+      .repo-desktop {
+        display: none;
+      }
+  
+      .mobil-tab {
+        display: block !important;
+      }
+    }
+  
+    .bbtns {
+      background: #ffae00;
+      color: #fff;
+      font-size: 12px;
+      line-height: 38px;
+      display: inline-block;
+      font-weight: 500;
+      padding: 0px 24px 0px 24px;
+      border-radius: 0;
+    }
+  
+    .form-control {
+      font-size: 12px;
+      line-height: 24px;
+      color: #cccccc;
+      border: solid #eeeeee;
+      border-left: 0px;
+      border-radius: 0px;
+    }
+  
+    .form-group {
+      margin-bottom: 8px;
+    }
+  
+    .input-group-text {
+      background: #fff;
+      border-radius: 0px;
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 36px;
+      padding: 0px 0px 0px 15px;
+      border: 1px solid #eeeeee;
+      border-right: 0px;
+    }
+  
+    .footermainclass {
+      padding: 35px 100px;
+    }
+  
+    .fonticon {
+      font-size: 30px;
+    }
+  
+    .topimgnav {
+      display: none;
+    }
+  
+    .topimgnav2 {
+      display: block;
+    }
+  
+  
+  
+    .noniconfooter{
+      display: none;
+    }
+    
+    @media screen and (max-width: 990px) {
+      .footermainclass {
+        margin-top: 50px;
+        padding: 15px;
+      }
+  
+      .topimgnav2 {
+        display: none;
+      }
+  
+      .topimgnav {
+        display: block;
+      }
+      .noniconfooter{
+      display: inline;
+    }
+    .noniconfooter2{
+      display: none;
+    }
+    }
+    .footerborder{
+      border: white !important;
+    }
+  </style>
+
+<body>
+
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
+        <div class="container-fluid navbar_padding">
+          <!-- Brand and toggle get grouped for better mobile display -->
+
+         
+
+          <a class="navbar-brand logo_h" href="index.html">
+            <img src="img/logoimg/mobillogo.svg" class="topimgnav" height="70">
+           </a> 
+         
+
+          <a href="./index.html"><img src="./img/logoimg/Artboard 1.svg" class="topimgnav2" height="85" width="230" style="padding-bottom: 5px;"> </a>
+
+          <!-- <a href="./index.html"> </a><img src="./img/logoimg/Artboard 1.svg" class="topimgnav2" height="85" width="230" style="padding-bottom: 5px;"> -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item matgin_style">
+                <div class="searchbar">
+
+                  <input type="text" placeholder="Axtar...">
+
+                  <div class="icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./bloq.html">Bloq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Giriş</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./register.html">Qeydiyyat</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+  <!--================ Start Home Banner Area =================-->
+  <section style="height: 78px;">
+    <div class="banner_inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner_content flout-left">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--================ End Home Banner Area =================-->
+
+
+
+
+<div style="height: 1000px;">
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="pressopen">&times;</a>
+    <div class="textcol">
+      <div class="sidebar-header">
+          <div class="container-fluid no-gutters">
+              <div class="row">
+                  <div class="col-9 no-gutters">
+                    <h2 class="mainnavbar" style="text-align: center;color:white">Pythona giriş</h2>
+                  </div>
+                  <div class="col-3 no-gutters">
+                    <button type="button" id="sidebarCollapse2" class="btn btn-info ngnon2">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+              </div>
+          </div>
+      </div>
+      <button class="accordion_2">1. Pythona giriş</button>
+      <div class="panel_2">
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>-->
+              <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+            <div class="col-6" id="datacorse2"></div>
+            <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>-->
+              <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
+            <div class="col-6" id="accardion1">İlk proqram </div>
+            <!--<button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+              <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+            <div class="col-6" id="accardion2">Dəyişənlər </div>
+            <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+              <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+            <div class="col-6" id="accardion3">Şərhlər </div>
+            <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+              <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+            <div class="col-6">Çalışma №1 </div>
+            <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_2"></i></a>-->
+              <input type="checkbox" id="checkboxId_2" onclick="clickCheckbox2()"></div>
+            <div class="col-6">Çalışma №2 </div>
+            <!--<button id="clickButton_2" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_3"></i></a>-->
+              <input type="checkbox" id="checkboxId_3" onclick="clickCheckbox2()"></div>
+            <div class="col-6">Test tapşırıqları </div>
+            <!--<button id="clickButton_3" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+          </div>
+        </div>
+        <hr>
+      </div>
+
+
+      <button class="accordion_2">2. Data tipləri</button>
+      <div class="panel_2">
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+            <div class="col-6">Ümumi məlumat</div>
+            <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+            <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
+                class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+            <div class="col-6">Tam ədədlər (int)</div>
+            <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+            <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
+                class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+            <div class="col-6">Həqiqi ədədlər (float)</div>
+            <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+            <a href="./login.html" class="padding_element" ; style="padding-top: 0px; padding-bottom: 0px;"><i
+                class="fa fa-lock" id="lock_id" style="color: #0a5973; margin-right: 50px; font-size: 20px;"></i></a>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+      <button class="accordion_2">3. Operatorlar</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">4. Qərarvermə və dövrlər</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">5. Sinif</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">6. Siyahı və kortej</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">7. Lüğət və çoxluqlar</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">8. Funksiyalar</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">9. Siniflər</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">10. Modullar</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">11. Fayllar</button>
+      <div class="panel_2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion_2">12. Xətalar və istisnalar</button>
+      <div class="panel_2">
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html" class="padding_element"><i class="fa fa-lock" id="lock_id"></i></a>-->
+              <input type="checkbox" id="checkboxId" onclick="clickCheckbox2()" class="padding_element"></div>
+            <div class="col-6">Ümumi məlumat</div>
+            <!-- <button id="clickButton" onclick="window.location.href='corse_input.html'" class="paner_into_button padding_element" >bax</button>-->
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid" style="padding-top:5px">
+          <div class="row">
+            <div class="col-3 cheachboxclass">
+              <!--<a href="./login.html"><i class="fa fa-lock" id="lock_id_1"></i></a>-->
+              <input type="checkbox" id="checkboxId_1" onclick="clickCheckbox2()"></div>
+            <div class="col-6">Son söz </div>
+            <!--<button id="clickButton_1" onclick="window.location.href='./corse_input.html'" class="paner_into_button">bax</button></div>-->
+          </div>
+        </div>
+        <hr>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function () {
+              $(".ngnon").hide();
+               let w=$(window).width();
+              if(w<769){
+                  $(".ngnon").show();  
+              }
+              console.log (w);
+
+              
+
+
+              $(".ngnon2").click(function () {
+                  $(".ngnon2").hide();
+                  $(".ngnon").show();
+              });
+
+              $(".ngnon").click(function () {
+                  $(".ngnon").hide();
+                  $(".ngnon2").show();
+              });
+          });
+        
+
+      </script>
+  </div>
+  </div>
+  
+  <div id="main">
+  
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="pressclose">&#9776; </span>
+    <div class="container-fluid" style="height: 900px;padding: 10px;" >
+      <div class="row" >
+        <div class="col-md-4 tracakborder tracakborder2"  >
+          <p class="mt-5" style="padding: 5px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus similique, earum sed consequatur, molestias voluptate, cum atque quod delectus qui iure fuga debitis esse numquam perspiciatis rem hic reprehenderit? Exercitationem, assumenda totam dolorum beatae odio eum eos, officiis, vero quisquam veniam ab omnis ad ratione facilis error? Vero, ipsum placeat.
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti odit eum, eaque dolore voluptatum quas tenetur consequuntur asperiores ea veniam magnam voluptas explicabo maiores nostrum facilis facere harum animi. Eaque.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error libero perspiciatis, provident quo minus minima fugit dolorem quasi ab nihil saepe impedit sed soluta ea placeat dolor dicta labore voluptates?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam minus sequi, unde soluta dolores libero mollitia, in rerum fugiat exercitationem error sit vitae, quia molestias provident quasi nihil corporis et eius dicta? Impedit, quia! Illo neque a libero delectus quas quam. Voluptatibus, provident non dolore debitis a dicta iste.
+          </p>
+        </div>
+       
+        <div class="col-md-8" >
+       
+            <div class="exercise">
+              
+              <div data-datacamp-exercise data-lang="python" data-height="">
+                <code data-type="pre-exercise-code"></code>
+                <code data-type="sample-code">
+                  import numpy as np
+                  import matplotlib.pyplot as plt
+          
+                  x = np.arange(0, 5, 0.1);
+                  y = np.sin(x)
+                  plt.plot(x, y)
+                  plt.show()
+                </code>
+                <code data-type="solution"></code>
+                <code data-type="sct"></code>
+                <div data-type="hint">Just press 'Run'.</div>
+              </div>
+            </div>
+         
+        </div>
+    
+      </div>
+    </div>
+     
+  </div>
+</div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "450px";
+    document.getElementById("main").style.marginLeft = "450px";
+    document.getElementById("pressclose").style.display="none";
+  
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("pressclose").style.display="block";
+    
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+
+  <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+  </script>
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background: #0a5973;">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left footermainclass">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÜMUMİ</h5>
+
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="./haqqimizda.html">Haqqımızda</a>
+          </li>
+          <li class="footer_li">
+            <a href="bloq.html">Bloq</a>
+          </li>
+          <li class="footer_li">
+            <a href="faydali.html">Faydalı</a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÖZÜNÜ YOXLA</h5>
+
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="calismalar.html">Çalışmalar</a>
+          </li>
+          <li class="footer_li">
+            <a href="testler.html">Testlər</a>
+          </li>
+          <li class="footer_li">
+            <a href="musahibe-suallari.html">Müsahibə Sualları</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ƏLAQƏ</h5>
+
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+
+            <a href="mailto:info@codeyourself.com">info@codeyourself.com</a>
+          </li>
+          <li class="footer_ul_li_a_paddding footer_li">
+            <a target="_blank" href="https://www.facebook.com/codeyourself1/" class="noniconfooter"><i
+                class="fa fa-facebook-square fonticon"></i></a>
+            <a target="_blank" href="https://www.instagram.com/code_yourself/" class="noniconfooter"><i
+                class="fa fa-instagram fonticon"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/code-yourself/" class="noniconfooter"><i
+                class="fa fa-linkedin-square fonticon"></i></a>
+            <a target="_blank" href="https://t.me/codeyourself"  class="noniconfooter"><i class="fa fa-telegram fonticon"></i></a>
+            <a target="_blank" href="https://twitter.com/code_yourself"  class="noniconfooter"><i class="fa fa-twitter fonticon" ></i></a>
+<br>
+            <!-- desktop -->
+            <a target="_blank" href="https://www.facebook.com/codeyourself1/"  class="noniconfooter2"><img
+                src="./img/iconfooter/iconmonstr-facebook-4-32.png" alt="" ></a>
+            <a target="_blank" href="https://www.instagram.com/code_yourself/"><img
+                src="./img/iconfooter/iconmonstr-instagram-11-32.png" alt=""  class="noniconfooter2"></a>
+            <a target="_blank" href="https://www.linkedin.com/company/code-yourself/"><img
+                src="./img/iconfooter/iconmonstr-linkedin-1-32.png" alt=""  class="noniconfooter2"></a>
+            <a target="_blank" href="https://t.me/codeyourself"><img
+                src="./img/iconfooter/iconmonstr-telegram-1-32.png" alt=""  class="noniconfooter2"></a>
+            <a target="_blank" href="https://twitter.com/code_yourself"><img
+                src="./img/iconfooter/iconmonstr-twitter-4-32.png" alt=""  class="noniconfooter2"></a>
+          </li>
+          <hr class="clearfix w-100 d-md-none pb-3">
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ABUNƏ OL</h5>
+        <h4 class="" style="color: rgba(255, 255, 255, 0.76);">Yeniliklərdən xəbərdar ol</h4><br />
+
+        <aside class="single-sidebar-widget newsletter_widget">
+          <div class="form-group d-flex flex-row">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="ti-email" aria-hidden="true" style="margin-left: -5px; margin-right: 5px;"></i></div>
+              </div>
+              <input type="text" class="form-control footerborder" id="inlineFormInputGroup" placeholder="Email"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+            </div>
+            <a href="#" class="bbtns">Təsdiqlə</a>
+          </div>
+          <div class="br"></div>
+        </aside>
+
+
+
+        <!-- Grid row -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
+<footer>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background: #104e67; color: white;"> Azərbaycanda <i
+      class="fa fa-heart" style="color:red;font-size: 18px;"></i> ilə hazırlanıb © 2021
+  </div>
+
+  <!-- Copyright -->
+</footer>
+
+
+
+  <script>
+    $(".fa-search").click(function () {
+      $(".icon").toggleClass("active");
+      $("input[type='text']").toggleClass("active");
+    });
+  </script>
+
+   
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('.kld').toggleClass('active');
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse2').on('click', function () {
+                $('.kld').toggleClass('active');
+
+            });
+        });
+    </script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./vendors/main/allcourse.js"></script>
+  <script src="./vendors/main/index.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/owl-carousel-thumb.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./vendors/main/main_page_corse.js"></script>
+
+  <script>
+    $(".btn").click(function () {
+      $(".input").toggleClass("active").focus;
+      $(this).toggleClass("animate");
+      $(".input").val("");
+    });
+  </script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./js/search.js"></script>
+  <script src="./vendors/main/corse_main_api.js"></script>
+  <script>
+    var acc = document.getElementsByClassName("accordion_2");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active_2");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+
+
+  <script>
+    const login = true;
+
+    function clickCheckbox2() {
+      if (!login) {
+        document.getElementById('checkboxId').disabled = true;
+        document.getElementById('checkboxId').checked = false;
+        document.getElementById("lock_id").style.display = "inline-block";
+
+        document.getElementById('checkboxId_1').disabled = true;
+        document.getElementById('checkboxId_1').checked = false;
+        document.getElementById('checkboxId_2').disabled = true;
+        document.getElementById('checkboxId_2').checked = false;
+        document.getElementById('checkboxId_3').disabled = true;
+        document.getElementById('checkboxId_3').checked = false;
+        document.getElementById("clickButton_1").disabled = true;
+        document.getElementById("clickButton_2").disabled = true;
+        document.getElementById("clickButton_3").disabled = true;
+        document.getElementById("clickButton").disabled = true;
+
+        document.getElementById("clickButton_input").disabled = true;
+
+
+        document.getElementById("lock_id_1").style.display = "inline-block";
+        document.getElementById("lock_id_2").style.display = "inline-block";
+        document.getElementById("lock_id_3").style.display = "inline-block";
+        return;
+      } else if (login) {
+        document.getElementById('checkboxId').disabled = false;
+        // document.getElementById('checkboxId').checked=true;
+        document.getElementById('checkboxId_1').disabled = false;
+        // document.getElementById('checkboxId_1').checked=true;
+        document.getElementById('checkboxId_2').disabled = false;
+        // document.getElementById('checkboxId_2').checked=true;
+        document.getElementById('checkboxId_3').disabled = false;
+        // document.getElementById('checkboxId_3').checked=true;
+        document.getElementById("clickButton").disabled = false;
+        document.getElementById("clickButton_input").disabled = false;
+
+        document.getElementById("clickButton_1").disabled = false;
+        document.getElementById("clickButton_2").disabled = false;
+        document.getElementById("clickButton_3").disabled = false;
+        document.getElementById("lock_id").style.display = "none";
+        document.getElementById("lock_id_1").style.display = "none";
+        document.getElementById("lock_id_2").style.display = "none";
+        document.getElementById("lock_id_3").style.display = "none";
+
+        return;
+      }
+    }
+    clickCheckbox2();
+
+  // let input = document.querySelectorAll('input[type="checkbox"]');
+  // let showValue = document.querySelector('#rating-value');
+
+  // for (let i = 0; i < input.length; i++) {
+  //   input[i];
+  //   if(!login){
+  //     input[i].disabled = true;
+  //     input[i].checked=false;
+  //   }
+  //   else if(login){
+
+  //   }
+  //   // input[i].disabled
+  //   // console.log(input[i].disabled);
+
+  // }
+
+  </script>
+  <script src="./vendors/main/curse_input.js"></script>
+<script src="./vendors/main/courseDetals.js"></script>
+</body>
+
+</html>
